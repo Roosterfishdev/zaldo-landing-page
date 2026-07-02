@@ -1,0 +1,16 @@
+{
+  "name": "Zaldo",
+  "short_name": "Zaldo",
+  "description": "Tené claro en qué se te va la plata",
+  "start_url": "/",
+  "display": "standalone",
+  "background_color": "#060e0e",
+  "theme_color": "#4FD1C5",
+  "icons": [
+    {
+      "src": "/assets/img/favicon/zaldo_128x128.png",
+      "sizes": "128x128",
+      "type": "image/png"
+    }
+  ]
+}

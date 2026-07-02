@@ -1,0 +1,765 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <script>document.documentElement.classList.add('js-animations');</script>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Zaldo — Tené claro en qué se te va la plata</title>
+  <meta name="description" content="Conviertí los correos de tu banco en un control de gastos automático. Sin anotar nada a mano, sin Excel, sin adivinar a fin de mes.">
+  <link rel="canonical" href="https://mizaldo.com/">
+  <meta name="theme-color" content="#4FD1C5">
+  <meta name="author" content="AUTHOR">
+
+  <!-- Open Graph -->
+  <meta property="og:type" content="website">
+  <meta property="og:title" content="Zaldo — Tené claro en qué se te va la plata">
+  <meta property="og:description" content="Zaldo convierte los correos de tu banco en un control de gastos automático. Sin anotar nada a mano, sin Excel, sin adivinar a fin de mes.">
+  <meta property="og:url" content="https://mizaldo.com/">
+  <meta property="og:image" content="https://mizaldo.com/assets/img/og-image.jpg">
+  <meta property="og:image:width" content="1200">
+  <meta property="og:image:height" content="630">
+  <meta property="og:locale" content="es_CR">
+  <meta property="og:site_name" content="Zaldo">
+
+  <!-- Twitter Card -->
+  <meta name="twitter:card" content="summary_large_image">
+  <meta name="twitter:title" content="Zaldo — Tené claro en qué se te va la plata">
+  <meta name="twitter:description" content="Zaldo convierte los correos de tu banco en un control de gastos automático. Sin anotar nada a mano, sin Excel, sin adivinar a fin de mes.">
+  <meta name="twitter:image" content="https://mizaldo.com/assets/img/og-image.jpg">
+
+  <!-- Favicons -->
+  <link rel="icon" type="image/png" sizes="128x128" href="/assets/img/favicon/zaldo_128x128.png">
+  <link rel="apple-touch-icon" href="/assets/img/favicon/zaldo_128x128.png">
+  <link rel="manifest" href="/site.webmanifest">
+
+  <!-- Fonts & styles -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link rel="preload" href="https://fonts.googleapis.com/css2?family=Manrope:wght@400;500;600;700&display=swap" as="style">
+  <link href="https://fonts.googleapis.com/css2?family=Manrope:wght@400;500;600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="assets/css/styles.css">
+</head>
+<body>
+  <main id="main">
+  <section class="hero hero--light">
+    <header class="nav">
+      <a href="index.html" class="logo" aria-label="Zaldo — inicio">
+        <img src="assets/zaldo-logo-v1.svg" alt="" class="logo-img" width="511" height="195" decoding="async">
+      </a>
+      <button type="button" class="nav-toggle" aria-expanded="false" aria-controls="nav-menu" aria-label="Abrir menú">
+        <span class="nav-toggle-bar" aria-hidden="true"></span>
+        <span class="nav-toggle-bar" aria-hidden="true"></span>
+        <span class="nav-toggle-bar" aria-hidden="true"></span>
+      </button>
+      <div class="nav-overlay" aria-hidden="true"></div>
+      <div class="nav-actions" id="nav-menu">
+        <nav aria-label="Principal">
+          <ul class="nav-links">
+            <li><a href="#features">Funciones</a></li>
+            <li><a href="#how-it-works">Cómo funciona</a></li>
+            <li><a href="#pricing">Precio</a></li>
+          </ul>
+        </nav>
+        <div class="nav-cta">
+          <a href="https://app.mizaldo.com/" class="btn btn--ghost nav-login">
+            <span>Iniciar sesión</span>
+          </a>
+          <a href="https://app.mizaldo.com/" class="btn btn--dark">
+            <span>Empezá gratis</span>
+          </a>
+        </div>
+      </div>
+    </header>
+
+    <div class="hero-content">
+      <h1 class="headline">
+        <span class="headline-line headline-line--desktop">Zaldo te ayuda a organizar tus gastos</span>
+        <span class="headline-line headline-line--desktop">y entender adonde va tu dinero</span>
+        <span class="headline-line headline-line--mobile">Zaldo te ayuda a organizar</span>
+        <span class="headline-line headline-line--mobile">tus gastos y entender</span>
+        <span class="headline-line headline-line--mobile">adonde va tu dinero</span>
+      </h1>
+
+      <p class="subheadline">
+        Convertí los correos de tu banco en un control de gastos automático. Sin anotar nada a mano, sin hojas de Excel<span class="subheadline-tail">, sin adivinar a fin de mes. Solo claridad</span>.
+      </p>
+
+      <div class="cta-group">
+        <a href="https://app.mizaldo.com/" class="btn btn--dark">
+          <span>Empezá gratis</span>
+          <span class="btn-icon">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M5 12h14M13 6l6 6-6 6"/></svg>
+          </span>
+        </a>
+        <a href="#how-it-works" class="btn btn--soft">
+          <span>Cómo funciona<span class="btn-q-mobile">?</span></span>
+        </a>
+      </div>
+    </div>
+
+    <div class="hero-showcase" aria-hidden="true">
+      <div class="hero-showcase-backdrop">
+        <div class="hero-ring hero-ring--1"></div>
+        <div class="hero-ring hero-ring--2"></div>
+        <div class="hero-ring hero-ring--3"></div>
+        <div class="hero-showcase-glow"></div>
+      </div>
+
+      <article class="hero-float hero-float--left hero-wallet-card">
+        <div class="hero-wallet-top">
+          <span class="hero-wallet-label">Gastos del mes</span>
+          <span class="hero-wallet-amount">₡312,450</span>
+        </div>
+        <div class="hero-wallet-progress">
+          <div class="hero-wallet-progress-fill" style="--pct: 68%">
+            <span>68%</span>
+          </div>
+        </div>
+        <div class="hero-wallet-footer">
+          <div class="hero-wallet-detail">
+            <span class="hero-wallet-detail-label">Límite mensual</span>
+            <span class="hero-wallet-detail-value">₡450,000</span>
+          </div>
+        </div>
+      </article>
+
+      <div class="hero-phone">
+        <img class="hero-phone-mockup" src="assets/zaldo-mockup.png" alt="App Zaldo en un celular" width="800" height="507" decoding="async">
+      </div>
+
+      <article class="hero-float hero-float--right">
+        <div class="hero-float-head">
+          <span class="hero-float-icon">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><path d="M18 20V10M12 20V4M6 20v-6"/></svg>
+          </span>
+          <span class="hero-float-title">Resumen del mes</span>
+        </div>
+        <div class="hero-float-chart">
+          <div class="hero-float-bar"><span>Ene</span><i style="--h: 42%"></i></div>
+          <div class="hero-float-bar"><span>Feb</span><i style="--h: 55%"></i></div>
+          <div class="hero-float-bar"><span>Mar</span><i style="--h: 48%"></i></div>
+          <div class="hero-float-bar hero-float-bar--active">
+            <span>Abr</span>
+            <div class="hero-float-bar-wrap" style="--h: 88%">
+              <span class="hero-float-bar-tag">312k</span>
+              <i></i>
+            </div>
+          </div>
+          <div class="hero-float-bar"><span>May</span><i style="--h: 60%"></i></div>
+        </div>
+      </article>
+    </div>
+  </section>
+
+  <section id="how-it-works" class="needs how-it-works">
+    <div class="needs-inner">
+      <header class="needs-header">
+        <p class="section-eyebrow">Así de fácil</p>
+        <h2>De un correo del banco <br> a tu control de gastos.</h2>
+        <p>Cada vez que comprás, tu banco te manda un correo. Zaldo lo lee por vos y lo convierte en una transacción ordenada y categorizada. Vos no hacés nada.</p>
+      </header>
+      <div class="needs-grid how-grid">
+        <article class="how-step-card">
+          <div class="how-step-visual" aria-hidden="true">
+            <div class="how-step-scene">
+              <div class="how-auth-mock">
+                <div class="how-auth-card">
+                  <div class="how-auth-brands">
+                    <div class="how-auth-brand how-auth-brand--google">
+                      <img src="assets/card-1/google-icon.svg" alt="" width="27" height="27" decoding="async">
+                    </div>
+                    <div class="how-auth-dots" aria-hidden="true">
+                      <span></span><span></span><span></span>
+                    </div>
+                    <div class="how-auth-brand how-auth-brand--zaldo">
+                      <img src="assets/card-1/zaldo-icon.svg" alt="" width="24" height="21" decoding="async">
+                    </div>
+                  </div>
+                  <p class="how-auth-title">Autorizar a <span>Zaldo</span></p>
+                  <ul class="how-auth-permissions">
+                    <li>
+                      <img src="assets/card-1/google-user.svg" alt="" width="13" height="13" decoding="async">
+                      <span>Ver tu dirección de correo electrónico</span>
+                    </li>
+                    <li>
+                      <img src="assets/card-1/google-user.svg" alt="" width="13" height="13" decoding="async">
+                      <span>Ver tus correos bancarios con Zaldo</span>
+                    </li>
+                  </ul>
+                  <span class="how-auth-btn">
+                    <span class="how-auth-btn-label">Autorizar</span>
+                    <span class="how-auth-btn-check" aria-hidden="true">
+                      <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"><path d="M5 12l5 5L20 7"/></svg>
+                    </span>
+                  </span>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="how-step-copy">
+            <h3>Conectás Zaldo a tu Gmail</h3>
+            <p>Instalás el complemento en un toque. Zaldo solo lee los correos de notificación de tu banco, nada más.</p>
+          </div>
+        </article>
+
+        <article class="how-step-card">
+          <div class="how-step-visual" aria-hidden="true">
+            <div class="how-step-scene">
+              <div class="how-mail-mock">
+                <div class="how-mail-window">
+                  <header class="how-mail-chrome">
+                    <span class="how-mail-chrome-title">Compra con tu tarjeta</span>
+                    <div class="how-mail-chrome-actions">
+                      <span></span><span></span><span></span>
+                    </div>
+                  </header>
+                  <div class="how-mail-fields">
+                    <div class="how-mail-field">
+                      <span class="how-mail-field-label">De</span>
+                      <span class="how-mail-field-value">BAC Credomatic</span>
+                    </div>
+                    <div class="how-mail-field">
+                      <span class="how-mail-field-label">Para</span>
+                      <span class="how-mail-field-value">juan.perez@gmail.com</span>
+                    </div>
+                    <div class="how-mail-field how-mail-field--subject">
+                      <span class="how-mail-field-label">Asunto</span>
+                      <span class="how-mail-field-value">Compra aprobada — VISA ****0940</span>
+                    </div>
+                  </div>
+                  <div class="how-mail-body">
+                    <p class="how-mail-greeting">Hola, Juan Perez <span aria-hidden="true">👋</span></p>
+                    <dl class="how-mail-receipt">
+                      <div class="how-mail-receipt-row">
+                        <dt>Comercio</dt>
+                        <dd>Joe's Pizzeria</dd>
+                      </div>
+                      <div class="how-mail-receipt-row">
+                        <dt>Fecha</dt>
+                        <dd>Abr 4, 2026, 22:26</dd>
+                      </div>
+                      <div class="how-mail-receipt-row">
+                        <dt>VISA</dt>
+                        <dd>**** **** 0940</dd>
+                      </div>
+                      <div class="how-mail-receipt-row">
+                        <dt>Tipo</dt>
+                        <dd>COMPRA</dd>
+                      </div>
+                    </dl>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="how-step-copy">
+            <h3>Llega un correo de tu banco</h3>
+            <p>Comprás algo con tu tarjeta BAC o Promerica. El banco te manda la notificación de siempre.</p>
+          </div>
+        </article>
+
+        <article class="how-step-card">
+          <div class="how-step-visual" aria-hidden="true">
+            <div class="how-step-scene">
+              <div class="how-mail-mock how-mail-mock--addon">
+                <div class="how-mail-window how-mail-window--addon">
+                  <aside class="how-addon-sidebar">
+                    <img class="how-addon-logo" src="assets/card-1/zaldo-icon.svg" alt="" width="24" height="21" decoding="async">
+                    <span class="how-addon-btn">
+                      <span class="how-addon-btn-label">Guardar</span>
+                      <span class="how-addon-btn-saved">
+                        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="3" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M5 12l5 5L20 7"/></svg>
+                        Guardado
+                      </span>
+                    </span>
+                  </aside>
+                  <header class="how-mail-chrome">
+                    <span class="how-mail-chrome-title">Compra con tu tarjeta</span>
+                    <div class="how-mail-chrome-actions">
+                      <span></span><span></span><span></span>
+                    </div>
+                  </header>
+                  <div class="how-mail-fields">
+                    <div class="how-mail-field">
+                      <span class="how-mail-field-label">De</span>
+                      <span class="how-mail-field-value">BAC Credomatic</span>
+                    </div>
+                    <div class="how-mail-field">
+                      <span class="how-mail-field-label">Para</span>
+                      <span class="how-mail-field-value">juan.perez@gmail.com</span>
+                    </div>
+                    <div class="how-mail-field how-mail-field--subject">
+                      <span class="how-mail-field-label">Asunto</span>
+                      <span class="how-mail-field-value">Compra aprobada — VISA ****0940</span>
+                    </div>
+                  </div>
+                  <div class="how-mail-body how-mail-body--placeholder">
+                    <div class="how-mail-placeholder">
+                      <span></span>
+                      <span></span>
+                      <span></span>
+                      <span></span>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="how-step-copy">
+            <h3>Guardás desde Gmail con el Addon y llega a tu dashboard</h3>
+            <p>Zaldo detecta el monto, el comercio y la categoría. Lo ves en tu dashboard sin haber tipeado una sola tecla.</p>
+          </div>
+        </article>
+      </div>
+      <p class="trust-note">🔒 Zaldo nunca ve tus contraseñas ni entra a tu banca en línea. Solo lee los correos de notificación que vos ya recibís.</p>
+      <div class="how-cta">
+        <a href="https://app.mizaldo.com/" class="btn btn--primary">
+          <span>Empezá gratis</span>
+          <span class="btn-icon">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M5 12h14M13 6l6 6-6 6"/></svg>
+          </span>
+        </a>
+      </div>
+    </div>
+  </section>
+
+  <section id="features" class="features">
+    <div class="features-inner">
+      <header class="features-header">
+        <p class="section-eyebrow">Todo en un solo lugar</p>
+        <h2>Funciones hechas <br> para que de verdad uses</h2>
+        <p>Desde categorías inteligentes hasta reportes claros. Lo que necesitás para tomar control, sin cosas de más.</p>
+      </header>
+
+      <div class="features-bento">
+        <article class="features-bento-card features-bento-card--wide">
+          <div class="features-bento-copy">
+            <h3>Complemento de Google</h3>
+            <p>Olvidate de meter cada compra a mano. Los correos de tu banco se convierten en transacciones ordenadas y categorizadas, automáticamente. Vos solo revisás.</p>
+          </div>
+          <div class="features-bento-visual" aria-hidden="true">
+            <div class="feat-addon-mock">
+              <div class="feat-addon-gmail">
+                <div class="feat-addon-gmail-head">
+                  <span class="feat-addon-dots"><span></span><span></span><span></span></span>
+                  <span>Gmail</span>
+                </div>
+                <ul class="feat-addon-inbox">
+                  <li class="feat-addon-mail feat-addon-mail--active">
+                    <span class="feat-addon-mail-from">BAC Credomatic</span>
+                    <span class="feat-addon-mail-subject">Compra ₡12,450 · Automercado</span>
+                  </li>
+                  <li class="feat-addon-mail">
+                    <span class="feat-addon-mail-from">Promerica</span>
+                    <span class="feat-addon-mail-subject">Compra aprobada</span>
+                  </li>
+                  <li class="feat-addon-mail">
+                    <span class="feat-addon-mail-from">BAC Credomatic</span>
+                    <span class="feat-addon-mail-subject">Compra ₡8,200 · Uber</span>
+                  </li>
+                </ul>
+              </div>
+              <div class="feat-addon-panel">
+                <div class="feat-addon-panel-head">
+                  <span class="feat-addon-logo">Zaldo</span>
+                  <span class="feat-addon-badge">3 nuevas</span>
+                </div>
+                <ul class="feat-addon-txs">
+                  <li><span>Automercado</span><strong>-₡12,450</strong></li>
+                  <li><span>Uber</span><strong>-₡8,200</strong></li>
+                  <li><span>Netflix</span><strong>-₡5,990</strong></li>
+                </ul>
+              </div>
+            </div>
+          </div>
+        </article>
+
+        <article class="features-bento-card features-bento-card--narrow">
+          <div class="features-bento-copy">
+            <h3>Categorías a tu manera</h3>
+            <p>Organizá tus gastos en categorías y subcategorías que tengan sentido para vos. Comida, transporte, suscripciones, lo que sea.</p>
+          </div>
+          <div class="features-bento-visual" aria-hidden="true">
+            <div class="feat-cat-mock">
+              <div class="feat-cat-item feat-cat-item--food">
+                <span class="feat-cat-dot"></span>
+                <span>Comida</span>
+                <span class="feat-cat-pct">28%</span>
+              </div>
+              <div class="feat-cat-item feat-cat-item--transport">
+                <span class="feat-cat-dot"></span>
+                <span>Transporte</span>
+                <span class="feat-cat-pct">14%</span>
+              </div>
+              <div class="feat-cat-item feat-cat-item--super">
+                <span class="feat-cat-dot"></span>
+                <span>Supermercado</span>
+                <span class="feat-cat-pct">22%</span>
+              </div>
+              <div class="feat-cat-item feat-cat-item--subs">
+                <span class="feat-cat-dot"></span>
+                <span>Suscripciones</span>
+                <span class="feat-cat-pct">9%</span>
+              </div>
+              <button type="button" class="feat-cat-add" tabindex="-1">+ Nueva categoría</button>
+            </div>
+          </div>
+        </article>
+
+        <article class="features-bento-card features-bento-card--narrow">
+          <div class="features-bento-copy">
+            <h3>Límites de gasto</h3>
+            <p>Poné un techo mensual, general o por categoría, y Zaldo te avisa antes de que se te pase la mano.</p>
+          </div>
+          <div class="features-bento-visual" aria-hidden="true">
+            <div class="feat-limit-mock">
+              <div class="feat-limit-card">
+                <div class="feat-limit-head">
+                  <span>Límite mensual</span>
+                  <span class="feat-limit-warn">78%</span>
+                </div>
+                <p class="feat-limit-amount">₡351,000 <span>de ₡450,000</span></p>
+                <div class="feat-limit-bar">
+                  <div class="feat-limit-fill" style="--pct: 78%"></div>
+                </div>
+                <p class="feat-limit-note">Te quedan ₡99,000 este mes</p>
+              </div>
+              <div class="feat-limit-alert">
+                <span class="feat-limit-alert-icon">!</span>
+                <span>Cerca del límite en Comida</span>
+              </div>
+            </div>
+          </div>
+        </article>
+
+        <article class="features-bento-card features-bento-card--wide">
+          <div class="features-bento-copy">
+            <h3>Reglas inteligentes</h3>
+            <p>Enseñale a Zaldo una vez: &quot;todo lo del Automercado es Súper&quot; y lo aplica solo de ahí en adelante.</p>
+          </div>
+          <div class="features-bento-visual" aria-hidden="true">
+            <div class="feat-rules-mock">
+              <div class="feat-rule-card feat-rule-card--back">
+                <span class="feat-rule-if">Si comercio contiene</span>
+                <span class="feat-rule-val">&quot;Uber&quot;</span>
+                <span class="feat-rule-then">→ Transporte</span>
+              </div>
+              <div class="feat-rule-card feat-rule-card--front">
+                <div class="feat-rule-head">
+                  <span class="feat-rule-if">Si comercio contiene</span>
+                  <span class="feat-rule-status">Activa</span>
+                </div>
+                <span class="feat-rule-val">&quot;Automercado&quot;</span>
+                <span class="feat-rule-then">→ Supermercado</span>
+                <div class="feat-rule-applied">
+                  <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><path d="M20 6L9 17l-5-5"/></svg>
+                  Aplicada a 12 transacciones
+                </div>
+              </div>
+            </div>
+          </div>
+        </article>
+      </div>
+
+      <div class="features-deferred" hidden>
+        <article class="need-card" tabindex="0">
+          <div class="need-card-body">
+            <div class="need-icon" aria-hidden="true">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M17 9V7a2 2 0 00-2-2H5a2 2 0 00-2 2v6a2 2 0 002 2h2m2 4h10a2 2 0 002-2v-6a2 2 0 00-2-2H9a2 2 0 00-2 2v6a2 2 0 002 2zm7-5a2 2 0 11-4 0 2 2 0 014 0z"/></svg>
+            </div>
+            <h3>Colones y dólares</h3>
+            <p>Cambiá entre CRC y USD cuando querás. Zaldo convierte todo al toque con el tipo de cambio del día.</p>
+          </div>
+        </article>
+        <article class="need-card" tabindex="0">
+          <div class="need-card-body">
+            <div class="need-icon" aria-hidden="true">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M12 5v14M5 12h14"/></svg>
+            </div>
+            <h3>Gastos manuales</h3>
+            <p>¿Pagaste algo en efectivo o por SINPE? Agregalo en segundos. No todo pasa por tarjeta y Zaldo lo sabe.</p>
+          </div>
+        </article>
+        <article class="need-card" tabindex="0">
+          <div class="need-card-body">
+            <div class="need-icon" aria-hidden="true">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z"/><path d="M13 8l-3 5h4l-3 5"/></svg>
+            </div>
+            <h3>Tu plata, privada</h3>
+            <p>Tus datos son tuyos. Zaldo solo lee las notificaciones de tu banco y nunca comparte tu información.</p>
+          </div>
+        </article>
+      </div>
+    </div>
+  </section>
+
+  <section class="savings">
+    <div class="savings-inner">
+      <div class="savings-chart-wrap">
+        <div class="savings-chart-card">
+          <h3>Progreso del mes</h3>
+          <div class="savings-gauge" id="savingsGauge">
+            <svg viewBox="0 0 220 130" fill="none" aria-hidden="true">
+              <path class="gauge-track gauge-track--rate" d="M 22 105 A 88 88 0 0 1 198 105"/>
+              <path class="gauge-track gauge-track--efficiency" d="M 38 105 A 72 72 0 0 1 182 105"/>
+              <path class="gauge-track gauge-track--engagement" d="M 54 105 A 56 56 0 0 1 166 105"/>
+              <path class="gauge-fill gauge-fill--rate" data-length="276" data-pct="100" d="M 22 105 A 88 88 0 0 1 198 105"/>
+              <path class="gauge-fill gauge-fill--efficiency" data-length="226" data-pct="45" d="M 38 105 A 72 72 0 0 1 182 105"/>
+              <path class="gauge-fill gauge-fill--engagement" data-length="176" data-pct="65" d="M 54 105 A 56 56 0 0 1 166 105"/>
+            </svg>
+            <div class="savings-gauge-center">
+              <div class="savings-gauge-amount">₡312,450</div>
+              <div class="savings-gauge-label">Gasto del mes</div>
+            </div>
+          </div>
+          <dl class="savings-legend">
+            <div class="savings-legend-item">
+              <div class="savings-legend-bar savings-legend-bar--rate"></div>
+              <dt>Límite</dt>
+              <dd>100%</dd>
+            </div>
+            <div class="savings-legend-item">
+              <div class="savings-legend-bar savings-legend-bar--efficiency"></div>
+              <dt>Comida</dt>
+              <dd>45%</dd>
+            </div>
+            <div class="savings-legend-item">
+              <div class="savings-legend-bar savings-legend-bar--engagement"></div>
+              <dt>Transporte</dt>
+              <dd>65%</dd>
+            </div>
+          </dl>
+        </div>
+      </div>
+
+      <div class="savings-copy">
+        <h2>Toda tu plata, clara de un solo vistazo</h2>
+        <p>Abrís Zaldo y en segundos sabés cómo venís: cuánto llevás gastado este mes, en qué categorías, y si vas bien o te estás pasando. Sin cuentas, sin Excel, sin sorpresas a fin de mes.</p>
+        <ul class="savings-steps">
+          <li class="savings-step">
+            <span class="savings-step-accent savings-step-accent--rate"></span>
+            Tu balance del mes, siempre actualizado
+          </li>
+          <li class="savings-step">
+            <span class="savings-step-accent savings-step-accent--efficiency"></span>
+            Tus gastos agrupados por categoría
+          </li>
+          <li class="savings-step">
+            <span class="savings-step-accent savings-step-accent--engagement"></span>
+            Comparación con meses anteriores (Pro)
+          </li>
+          <li class="savings-step">
+            <span class="savings-step-accent savings-step-accent--rate"></span>
+            Alertas cuando te acercás a tus límites
+          </li>
+        </ul>
+      </div>
+    </div>
+  </section>
+
+  <section id="pricing" class="pricing">
+    <div class="pricing-inner">
+      <header class="pricing-header">
+        <p class="section-eyebrow">Precios claros, sin letra chica</p>
+        <h2>Empezá gratis. Subí a Pro cuando lo necesités.</h2>
+        <p>Sin cobros escondidos, sin sorpresas. Elegí el plan que te sirva y cambiá cuando querás.</p>
+        <div class="billing-toggle" role="group" aria-label="Período de facturación">
+          <button type="button" class="billing-toggle-label active" data-billing="monthly" aria-pressed="true">Mensual</button>
+          <button type="button" class="billing-toggle-track" aria-label="Cambiar período de facturación">
+            <span class="billing-toggle-knob"></span>
+          </button>
+          <button type="button" class="billing-toggle-label" data-billing="annually" aria-pressed="false">
+            Anual
+            <span class="billing-badge">2 meses gratis</span>
+          </button>
+        </div>
+      </header>
+
+      <div class="pricing-grid">
+        <article class="pricing-card pricing-card--free">
+          <div class="pricing-card-top">
+            <h3 class="pricing-plan">Gratis</h3>
+            <p class="pricing-desc">Lo esencial para ordenar tus finanzas personales.</p>
+            <div class="pricing-price">
+              <span class="pricing-currency">$</span>
+              <span class="pricing-amount">0</span>
+              <span class="pricing-period">/ para siempre</span>
+            </div>
+            <a href="https://app.mizaldo.com/" class="pricing-cta pricing-cta--outline">Empezá gratis</a>
+          </div>
+          <div class="pricing-card-features">
+            <ul class="pricing-features">
+              <li>Transacciones manuales ilimitadas</li>
+              <li>Categorías base + hasta 2 propias</li>
+              <li>Reglas y límites de gasto</li>
+              <li>Reportes del mes actual</li>
+            </ul>
+          </div>
+        </article>
+
+        <article class="pricing-card pricing-card--pro">
+          <span class="pricing-recommended">Recomendado</span>
+          <div class="pricing-card-top">
+            <h3 class="pricing-plan">Pro</h3>
+            <p class="pricing-desc">Automatización y control total de tus finanzas.</p>
+            <div class="pricing-price">
+              <span class="pricing-currency" id="pricingCurrency">$</span>
+              <span class="pricing-amount" id="pricingAmount">5.99</span>
+              <span class="pricing-period" id="pricingPeriod">/ mes</span>
+            </div>
+            <a href="https://app.mizaldo.com/" class="pricing-cta pricing-cta--solid">Empezá tu prueba de 7 días</a>
+          </div>
+          <div class="pricing-card-features">
+            <ul class="pricing-features">
+              <li>Todo lo del plan Gratis</li>
+              <li><strong>Add-on de Gmail</strong> (importación automática)</li>
+              <li>Categorías y subcategorías ilimitadas</li>
+              <li>Límites de gasto por categoría</li>
+              <li>Transacciones recurrentes</li>
+              <li>Reportes de todos los meses (historial completo)</li>
+              <li>Soporte prioritario</li>
+            </ul>
+            <p class="pricing-microcopy">Gratis por 7 días. Cancelá cuando querás, sin enredos.</p>
+          </div>
+        </article>
+      </div>
+    </div>
+  </section>
+
+  <section id="faq" class="faq">
+    <div class="faq-inner">
+      <div class="faq-intro">
+        <h2>Preguntas que de seguro tenés</h2>
+      </div>
+
+      <ul class="faq-list">
+        <li class="faq-item">
+          <button type="button" class="faq-question" aria-expanded="false">
+            <span>¿Zaldo entra a mi banca en línea?</span>
+            <span class="faq-icon" aria-hidden="true">+</span>
+          </button>
+          <div class="faq-answer">
+            <div class="faq-answer-inner">No, nunca. Zaldo no tiene acceso a tu cuenta bancaria ni a tus contraseñas. Solo lee los correos de notificación que tu banco ya te manda cuando hacés una compra. Nada más.</div>
+          </div>
+        </li>
+        <li class="faq-item">
+          <button type="button" class="faq-question" aria-expanded="false">
+            <span>¿Con cuáles bancos funciona?</span>
+            <span class="faq-icon" aria-hidden="true">+</span>
+          </button>
+          <div class="faq-answer">
+            <div class="faq-answer-inner">Por ahora funciona con las notificaciones de BAC y Promerica. Si tu banco te manda correos de notificación de tus compras, lo más probable es que podamos sumarlo pronto.</div>
+          </div>
+        </li>
+        <li class="faq-item">
+          <button type="button" class="faq-question" aria-expanded="false">
+            <span>¿Tengo que anotar mis gastos a mano?</span>
+            <span class="faq-icon" aria-hidden="true">+</span>
+          </button>
+          <div class="faq-answer">
+            <div class="faq-answer-inner">Con el add-on de Gmail no: tus compras con tarjeta se importan solas. Y si pagaste en efectivo o por SINPE, lo agregás manualmente en segundos. Vos elegís.</div>
+          </div>
+        </li>
+        <li class="faq-item">
+          <button type="button" class="faq-question" aria-expanded="false">
+            <span>¿Es seguro conectar mi Gmail?</span>
+            <span class="faq-icon" aria-hidden="true">+</span>
+          </button>
+          <div class="faq-answer">
+            <div class="faq-answer-inner">Sí. Zaldo solo pide permiso para leer los correos de tu banco, y no toca nada más de tu bandeja. Tus datos son tuyos y no los compartimos con nadie.</div>
+          </div>
+        </li>
+        <li class="faq-item">
+          <button type="button" class="faq-question" aria-expanded="false">
+            <span>¿Qué pasa si cancelo el plan Pro?</span>
+            <span class="faq-icon" aria-hidden="true">+</span>
+          </button>
+          <div class="faq-answer">
+            <div class="faq-answer-inner">No perdés nada de tu información. Tu cuenta pasa al plan Gratis y conservás todos tus datos. Si algún día volvés a Pro, todo se restaura tal cual lo dejaste.</div>
+          </div>
+        </li>
+        <li class="faq-item">
+          <button type="button" class="faq-question" aria-expanded="false">
+            <span>¿Puedo usar Zaldo gratis de verdad?</span>
+            <span class="faq-icon" aria-hidden="true">+</span>
+          </button>
+          <div class="faq-answer">
+            <div class="faq-answer-inner">Sí. El plan Gratis es gratis para siempre e incluye lo esencial para llevar el control de tus gastos. Pasás a Pro solo si querés la importación automática y las funciones avanzadas.</div>
+          </div>
+        </li>
+        <li class="faq-item">
+          <button type="button" class="faq-question" aria-expanded="false">
+            <span>¿En qué moneda funciona?</span>
+            <span class="faq-icon" aria-hidden="true">+</span>
+          </button>
+          <div class="faq-answer">
+            <div class="faq-answer-inner">En colones y dólares. Podés cambiar entre CRC y USD cuando querás, y Zaldo convierte todo con el tipo de cambio del día.</div>
+          </div>
+        </li>
+      </ul>
+    </div>
+  </section>
+
+  <div class="site-closing">
+    <section class="cta-final" id="cta-final">
+      <div class="cta-final-inner">
+        <h2>Tomá el control de tu plata hoy</h2>
+        <p>Empezá gratis en menos de un minuto. Sin tarjeta, sin compromiso.<br>Date cuenta de a dónde se va tu dinero.</p>
+        <div class="cta-group">
+          <a href="https://app.mizaldo.com/" class="btn btn--dark">
+            <span>Empezá gratis</span>
+          </a>
+        </div>
+      </div>
+    </section>
+
+    <footer class="site-footer">
+      <div class="site-footer-card">
+        <div class="site-footer-main">
+          <div class="site-footer-brand">
+            <a href="index.html" class="site-footer-logo" aria-label="Zaldo — inicio">
+              <img src="assets/zaldo-logo-v1.svg" alt="" class="logo-img" width="511" height="195" decoding="async">
+            </a>
+            <p class="site-footer-tagline">Convertí los correos de tu banco en un control de gastos automático.</p>
+          </div>
+          <div class="site-footer-columns">
+            <div class="site-footer-col">
+              <h3>Producto</h3>
+              <ul>
+                <li><a href="#features">Funciones</a></li>
+                <li><a href="#pricing">Precios</a></li>
+                <li><a href="#how-it-works">Cómo funciona</a></li>
+              </ul>
+            </div>
+            <div class="site-footer-col">
+              <h3>Cuenta</h3>
+              <ul>
+                <li><a href="https://app.mizaldo.com/">Iniciar sesión</a></li>
+                <li><a href="https://app.mizaldo.com/">Empezá gratis</a></li>
+              </ul>
+            </div>
+            <div class="site-footer-col">
+              <h3>Legal</h3>
+              <ul>
+                <li><a href="privacy-policy.html">Privacidad</a></li>
+                <li><a href="terms-of-service.html">Términos</a></li>
+                <li><a href="refund-and-cancellation-policy.html">Reembolsos</a></li>
+              </ul>
+            </div>
+            <div class="site-footer-col">
+              <h3>Contacto</h3>
+              <ul>
+                <li><a href="soporte/">Soporte</a></li>
+                <li><a href="mailto:support@mizaldo.com">support@mizaldo.com</a></li>
+              </ul>
+            </div>
+          </div>
+        </div>
+        <p class="site-footer-copy">© 2026 Zaldo. Hecho en Costa Rica 🇨🇷</p>
+      </div>
+    </footer>
+  </div>
+  </main>
+  <script src="assets/js/main.js" defer></script>
+</body>
+</html>
