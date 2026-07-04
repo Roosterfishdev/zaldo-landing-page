@@ -1,0 +1,533 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Funciones — sticky scroll showcase (demo)</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Manrope:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+
+<style>
+/* ============================================================
+   STICKY FEATURE SHOWCASE — "Funciones hechas para que de verdad uses"
+   Self-contained. To wire into the landing:
+   1. Copy this <style> block into styles.css
+   2. Copy the <section id="funciones-sticky"> markup into index.html
+      (replacing the current #features section)
+   3. Copy the <script> block into main.js
+   ============================================================ */
+
+/* Demo-page reset — your landing already has these. Safe to drop. */
+*, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
+body {
+  font-family: 'Manrope', system-ui, sans-serif;
+  background: #ffffff;
+  color: #232d2b;
+  -webkit-font-smoothing: antialiased;
+}
+.demo-filler {
+  height: 60vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: #8b9591;
+  font-size: 0.875rem;
+}
+
+:root {
+  --fx-accent: #5EC5A7;
+}
+
+.fx-section {
+  position: relative;
+  height: 300vh;
+  background: #f7f9f9;
+}
+
+.fx-steps {
+  position: absolute;
+  inset: 0;
+  pointer-events: none;
+}
+.fx-step {
+  height: 33.333%;
+}
+
+.fx-panel {
+  position: sticky;
+  top: 0;
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  overflow: hidden;
+  padding: 2.5rem 1.5rem;
+}
+
+.fx-panel-inner {
+  width: min(1100px, 100%);
+  margin: 0 auto;
+}
+
+.fx-header {
+  text-align: center;
+  margin-bottom: 2.5rem;
+}
+.fx-eyebrow {
+  font-size: 0.8125rem;
+  font-weight: 600;
+  letter-spacing: 0.08em;
+  text-transform: uppercase;
+  color: #1a6b63;
+  margin-bottom: 0.75rem;
+}
+.fx-header h2 {
+  font-size: clamp(1.75rem, 4vw, 2.5rem);
+  font-weight: 700;
+  letter-spacing: -0.03em;
+  color: #0f2e2c;
+  line-height: 1.2;
+}
+
+.fx-stage {
+  display: grid;
+  grid-template-columns: 1.05fr 0.95fr;
+  gap: 4rem;
+  align-items: center;
+}
+
+.fx-parallax {
+  will-change: transform;
+}
+
+.fx-slides {
+  position: relative;
+}
+.fx-slide {
+  position: absolute;
+  inset: 0;
+  opacity: 0;
+  transform: translateY(20px);
+  transition: opacity 0.4s ease-out, transform 0.4s ease-out;
+  pointer-events: none;
+}
+.fx-slide.is-active {
+  opacity: 1;
+  transform: translateY(0);
+  pointer-events: auto;
+}
+.fx-slide--sizer {
+  position: static;
+  visibility: hidden;
+  pointer-events: none;
+}
+[data-slides="mock"] .fx-slide {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+/* Screenshot mockups from assets/features/ */
+.fx-mockup {
+  width: min(400px, 100%);
+  border-radius: 28px;
+  overflow: hidden;
+  box-shadow: 0 24px 60px rgba(20, 40, 35, 0.14);
+  flex-shrink: 0;
+}
+.fx-mockup img {
+  display: block;
+  width: 100%;
+  height: auto;
+  aspect-ratio: 1;
+  object-fit: cover;
+}
+
+.fx-copy h3 {
+  font-size: clamp(1.375rem, 2.6vw, 1.875rem);
+  font-weight: 700;
+  letter-spacing: -0.02em;
+  color: #0f2e2c;
+  margin-bottom: 1rem;
+  line-height: 1.25;
+}
+.fx-copy p {
+  font-size: 0.9875rem;
+  line-height: 1.7;
+  color: #64748b;
+  max-width: 46ch;
+}
+
+.fx-dots {
+  position: absolute;
+  left: 1.5rem;
+  top: 50%;
+  transform: translateY(-50%);
+  display: flex;
+  flex-direction: column;
+  gap: 0.75rem;
+  z-index: 2;
+}
+.fx-dot {
+  width: 8px;
+  height: 8px;
+  border-radius: 50%;
+  background: #cfd9d8;
+  transition: background 0.3s ease, transform 0.3s ease;
+}
+.fx-dot.is-active {
+  background: var(--fx-accent);
+  transform: scale(1.35);
+}
+
+@media (max-width: 767px) {
+  .fx-section {
+    height: auto;
+    padding: 4rem 0 4.5rem;
+  }
+  .fx-steps,
+  .fx-dots {
+    display: none;
+  }
+  .fx-panel {
+    position: static;
+    height: auto;
+    overflow: visible;
+    padding: 0 1.5rem;
+  }
+  .fx-header {
+    margin-bottom: 3rem;
+  }
+  .fx-stage {
+    display: flex;
+    flex-direction: column;
+    gap: 4rem;
+  }
+  .fx-parallax {
+    transform: none !important;
+  }
+  .fx-slides {
+    display: flex;
+    flex-direction: column;
+    gap: 4rem;
+  }
+  .fx-slide {
+    position: static;
+    pointer-events: auto;
+    opacity: 0;
+    transform: translateY(20px);
+  }
+  .fx-slide.in-view {
+    opacity: 1;
+    transform: translateY(0);
+  }
+  .fx-slide--sizer {
+    display: none;
+  }
+  .fx-parallax[data-parallax="text"] {
+    display: none;
+  }
+  .fx-mobile-pair {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 1.5rem;
+    width: 100%;
+  }
+  .fx-mobile-pair .fx-mobile-copy {
+    width: 100%;
+  }
+}
+
+@media (min-width: 768px) {
+  .fx-slide .fx-mobile-copy {
+    display: none;
+  }
+}
+
+@media (prefers-reduced-motion: reduce) {
+  .fx-slide {
+    transition: none;
+  }
+  .fx-slide.is-active,
+  .fx-slide.in-view {
+    transform: none;
+  }
+  .fx-parallax {
+    transform: none !important;
+  }
+  .fx-dot {
+    transition: none;
+  }
+  @media (max-width: 767px) {
+    .fx-slide {
+      opacity: 1;
+      transform: none;
+    }
+  }
+}
+</style>
+</head>
+<body>
+
+<div class="demo-filler">↓ contenido anterior (demo) ↓</div>
+
+<section class="fx-section" id="funciones-sticky" aria-label="Funciones de Zaldo">
+
+  <div class="fx-steps" aria-hidden="true">
+    <div class="fx-step" data-step="0"></div>
+    <div class="fx-step" data-step="1"></div>
+    <div class="fx-step" data-step="2"></div>
+  </div>
+
+  <div class="fx-panel">
+
+    <div class="fx-dots" aria-hidden="true">
+      <span class="fx-dot is-active"></span>
+      <span class="fx-dot"></span>
+      <span class="fx-dot"></span>
+    </div>
+
+    <div class="fx-panel-inner">
+      <header class="fx-header">
+        <p class="fx-eyebrow">Todo en un solo lugar</p>
+        <h2>Funciones hechas <br> para que de verdad uses</h2>
+      </header>
+
+      <div class="fx-stage">
+
+        <div class="fx-parallax" data-parallax="mock">
+          <div class="fx-slides" data-slides="mock">
+
+            <div class="fx-slide fx-slide--sizer" aria-hidden="true">
+              <div class="fx-mockup">
+                <img src="assets/features/Zaldo-Reportes.png" alt="" width="4000" height="4000">
+              </div>
+            </div>
+
+            <div class="fx-slide is-active" data-slide="0">
+              <div class="fx-mobile-pair">
+                <div class="fx-mockup">
+                  <img src="assets/features/Zaldo-Categorias.png" alt="Pantalla de categorías en Zaldo" width="4000" height="4000" loading="lazy">
+                </div>
+                <div class="fx-mobile-copy fx-copy">
+                  <h3>Categorías a tu manera</h3>
+                  <p>Organizá tus gastos en categorías y subcategorías que tengan sentido para vos. Comida, transporte, suscripciones, lo que sea.</p>
+                </div>
+              </div>
+            </div>
+
+            <div class="fx-slide" data-slide="1">
+              <div class="fx-mobile-pair">
+                <div class="fx-mockup">
+                  <img src="assets/features/Zaldo-Reportes.png" alt="Pantalla de reportes en Zaldo" width="4000" height="4000" loading="lazy">
+                </div>
+                <div class="fx-mobile-copy fx-copy">
+                  <h3>Toda tu plata, clara de un solo vistazo</h3>
+                  <p>Abrís Zaldo y en segundos sabés cómo venís: cuánto llevás gastado este mes, en qué categorías, y si vas bien o te estás pasando. Sin cuentas, sin Excel, sin sorpresas a fin de mes.</p>
+                </div>
+              </div>
+            </div>
+
+            <div class="fx-slide" data-slide="2">
+              <div class="fx-mobile-pair">
+                <div class="fx-mockup">
+                  <img src="assets/features/Transacciones - Zaldo.png" alt="Pantalla de transacciones en Zaldo" width="4000" height="4000" loading="lazy">
+                </div>
+                <div class="fx-mobile-copy fx-copy">
+                  <h3>Reglas inteligentes</h3>
+                  <p>Enseñale a Zaldo una vez: «todo lo del Automercado es Súper» y lo aplica solo de ahí en adelante.</p>
+                </div>
+              </div>
+            </div>
+
+          </div>
+        </div>
+
+        <div class="fx-parallax" data-parallax="text">
+          <div class="fx-slides" data-slides="text">
+
+            <div class="fx-slide fx-slide--sizer" aria-hidden="true">
+              <div class="fx-copy">
+                <h3>Toda tu plata, clara de un solo vistazo</h3>
+                <p>Abrís Zaldo y en segundos sabés cómo venís: cuánto llevás gastado este mes, en qué categorías, y si vas bien o te estás pasando. Sin cuentas, sin Excel, sin sorpresas a fin de mes.</p>
+              </div>
+            </div>
+
+            <div class="fx-slide is-active" data-slide="0">
+              <div class="fx-copy">
+                <h3>Categorías a tu manera</h3>
+                <p>Organizá tus gastos en categorías y subcategorías que tengan sentido para vos. Comida, transporte, suscripciones, lo que sea.</p>
+              </div>
+            </div>
+
+            <div class="fx-slide" data-slide="1">
+              <div class="fx-copy">
+                <h3>Toda tu plata, clara de un solo vistazo</h3>
+                <p>Abrís Zaldo y en segundos sabés cómo venís: cuánto llevás gastado este mes, en qué categorías, y si vas bien o te estás pasando. Sin cuentas, sin Excel, sin sorpresas a fin de mes.</p>
+              </div>
+            </div>
+
+            <div class="fx-slide" data-slide="2">
+              <div class="fx-copy">
+                <h3>Reglas inteligentes</h3>
+                <p>Enseñale a Zaldo una vez: «todo lo del Automercado es Súper» y lo aplica solo de ahí en adelante.</p>
+              </div>
+            </div>
+
+          </div>
+        </div>
+
+      </div>
+    </div>
+  </div>
+</section>
+
+<div class="demo-filler">↓ contenido siguiente (demo) ↓</div>
+
+<script>
+(function () {
+  'use strict';
+
+  var section = document.getElementById('funciones-sticky');
+  if (!section) return;
+
+  var prefersReducedMotion = window.matchMedia('(prefers-reduced-motion: reduce)').matches;
+  var mobileQuery = window.matchMedia('(max-width: 767px)');
+
+  var steps = section.querySelectorAll('.fx-step');
+  var dots = section.querySelectorAll('.fx-dot');
+  var mockSlides = section.querySelectorAll('[data-slides="mock"] > .fx-slide:not(.fx-slide--sizer)');
+  var textSlides = section.querySelectorAll('[data-slides="text"] > .fx-slide:not(.fx-slide--sizer)');
+  var mockParallax = section.querySelector('[data-parallax="mock"]');
+  var textParallax = section.querySelector('[data-parallax="text"]');
+
+  var activeIndex = 0;
+
+  function setActive(index) {
+    if (index === activeIndex) return;
+    activeIndex = index;
+    mockSlides.forEach(function (slide, i) {
+      slide.classList.toggle('is-active', i === index);
+    });
+    textSlides.forEach(function (slide, i) {
+      slide.classList.toggle('is-active', i === index);
+    });
+    dots.forEach(function (dot, i) {
+      dot.classList.toggle('is-active', i === index);
+    });
+  }
+
+  var stepObserver = null;
+
+  function enableDesktopObserver() {
+    if (stepObserver) return;
+    stepObserver = new IntersectionObserver(function (entries) {
+      entries.forEach(function (entry) {
+        if (entry.isIntersecting) {
+          setActive(parseInt(entry.target.dataset.step, 10));
+        }
+      });
+    }, {
+      rootMargin: '-50% 0px -50% 0px',
+      threshold: 0
+    });
+    steps.forEach(function (step) { stepObserver.observe(step); });
+  }
+
+  function disableDesktopObserver() {
+    if (!stepObserver) return;
+    stepObserver.disconnect();
+    stepObserver = null;
+  }
+
+  var MOCK_RANGE = -36;
+  var TEXT_RANGE = -14;
+  var ticking = false;
+  var parallaxEnabled = false;
+
+  function updateParallax() {
+    ticking = false;
+    if (!parallaxEnabled) return;
+    var rect = section.getBoundingClientRect();
+    var range = rect.height - window.innerHeight;
+    if (range <= 0) return;
+    var progress = Math.min(1, Math.max(0, -rect.top / range));
+    mockParallax.style.transform = 'translateY(' + (progress * MOCK_RANGE).toFixed(1) + 'px)';
+    textParallax.style.transform = 'translateY(' + (progress * TEXT_RANGE).toFixed(1) + 'px)';
+  }
+
+  function onScroll() {
+    if (!ticking) {
+      ticking = true;
+      requestAnimationFrame(updateParallax);
+    }
+  }
+
+  function enableParallax() {
+    if (parallaxEnabled) return;
+    parallaxEnabled = true;
+    window.addEventListener('scroll', onScroll, { passive: true });
+    updateParallax();
+  }
+
+  function disableParallax() {
+    if (!parallaxEnabled) return;
+    parallaxEnabled = false;
+    window.removeEventListener('scroll', onScroll);
+    mockParallax.style.transform = '';
+    textParallax.style.transform = '';
+  }
+
+  var mobileObserver = null;
+
+  function enableMobileObserver() {
+    if (mobileObserver || prefersReducedMotion) return;
+    mobileObserver = new IntersectionObserver(function (entries) {
+      entries.forEach(function (entry) {
+        if (entry.isIntersecting) {
+          entry.target.classList.add('in-view');
+          mobileObserver.unobserve(entry.target);
+        }
+      });
+    }, { rootMargin: '0px 0px -10% 0px', threshold: 0.15 });
+    mockSlides.forEach(function (slide) { mobileObserver.observe(slide); });
+  }
+
+  function disableMobileObserver() {
+    if (!mobileObserver) return;
+    mobileObserver.disconnect();
+    mobileObserver = null;
+  }
+
+  function applyMode() {
+    if (mobileQuery.matches) {
+      disableDesktopObserver();
+      disableParallax();
+      enableMobileObserver();
+      if (prefersReducedMotion) {
+        mockSlides.forEach(function (s) { s.classList.add('in-view'); });
+      }
+    } else {
+      disableMobileObserver();
+      mockSlides.forEach(function (s) { s.classList.remove('in-view'); });
+      enableDesktopObserver();
+      if (!prefersReducedMotion) {
+        enableParallax();
+      }
+    }
+  }
+
+  if (mobileQuery.addEventListener) {
+    mobileQuery.addEventListener('change', applyMode);
+  } else {
+    mobileQuery.addListener(applyMode);
+  }
+
+  applyMode();
+})();
+</script>
+
+</body>
+</html>

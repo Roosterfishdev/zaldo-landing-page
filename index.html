@@ -5,10 +5,10 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Zaldo — Tené claro en qué se te va la plata</title>
-  <meta name="description" content="Conviertí los correos de tu banco en un control de gastos automático. Sin anotar nada a mano, sin Excel, sin adivinar a fin de mes.">
+  <meta name="description" content="Convertí los correos de tu banco en un control de gastos automático. Sin anotar nada a mano, sin Excel, sin adivinar a fin de mes.">
   <link rel="canonical" href="https://mizaldo.com/">
   <meta name="theme-color" content="#4FD1C5">
-  <meta name="author" content="AUTHOR">
+  <meta name="author" content="Zaldo">
 
   <!-- Open Graph -->
   <meta property="og:type" content="website">
@@ -28,6 +28,7 @@
   <meta name="twitter:image" content="https://mizaldo.com/assets/img/og-image.jpg">
 
   <!-- Favicons -->
+  <link rel="icon" href="/favicon.ico" sizes="any">
   <link rel="icon" type="image/png" sizes="128x128" href="/assets/img/favicon/zaldo_128x128.png">
   <link rel="apple-touch-icon" href="/assets/img/favicon/zaldo_128x128.png">
   <link rel="manifest" href="/site.webmanifest">
@@ -38,13 +39,36 @@
   <link rel="preload" href="https://fonts.googleapis.com/css2?family=Manrope:wght@400;500;600;700&display=swap" as="style">
   <link href="https://fonts.googleapis.com/css2?family=Manrope:wght@400;500;600;700&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="assets/css/styles.css">
+
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "SoftwareApplication",
+    "name": "Zaldo",
+    "url": "https://mizaldo.com/",
+    "applicationCategory": "FinanceApplication",
+    "operatingSystem": "Web, Android, iOS",
+    "description": "Zaldo convierte los correos de tu banco en un control de gastos automático. Sin anotar nada a mano, sin Excel.",
+    "offers": {
+      "@type": "Offer",
+      "price": "0",
+      "priceCurrency": "CRC"
+    },
+    "publisher": {
+      "@type": "Organization",
+      "name": "Zaldo",
+      "url": "https://mizaldo.com/",
+      "logo": "https://mizaldo.com/assets/zaldo-logo-v1.svg"
+    }
+  }
+  </script>
 </head>
 <body>
   <main id="main">
   <section class="hero hero--light">
     <header class="nav">
       <a href="index.html" class="logo" aria-label="Zaldo — inicio">
-        <img src="assets/zaldo-logo-v1.svg" alt="" class="logo-img" width="511" height="195" decoding="async">
+        <img src="assets/zaldo-logo-v1.svg" alt="Zaldo" class="logo-img" width="511" height="195" decoding="async">
       </a>
       <button type="button" class="nav-toggle" aria-expanded="false" aria-controls="nav-menu" aria-label="Abrir menú">
         <span class="nav-toggle-bar" aria-hidden="true"></span>
@@ -124,7 +148,7 @@
       </article>
 
       <div class="hero-phone">
-        <img class="hero-phone-mockup" src="assets/zaldo-mockup.png" alt="App Zaldo en un celular" width="800" height="507" decoding="async">
+        <img class="hero-phone-mockup" src="assets/zaldo-mockup.png" alt="App Zaldo en un celular" width="800" height="507" decoding="async" fetchpriority="high">
       </div>
 
       <article class="hero-float hero-float--right">
@@ -166,23 +190,23 @@
                 <div class="how-auth-card">
                   <div class="how-auth-brands">
                     <div class="how-auth-brand how-auth-brand--google">
-                      <img src="assets/card-1/google-icon.svg" alt="" width="27" height="27" decoding="async">
+                      <img src="assets/card-1/google-icon.svg" alt="" width="27" height="27" decoding="async" loading="lazy">
                     </div>
                     <div class="how-auth-dots" aria-hidden="true">
                       <span></span><span></span><span></span>
                     </div>
                     <div class="how-auth-brand how-auth-brand--zaldo">
-                      <img src="assets/card-1/zaldo-icon.svg" alt="" width="24" height="21" decoding="async">
+                      <img src="assets/card-1/zaldo-icon.svg" alt="" width="24" height="21" decoding="async" loading="lazy">
                     </div>
                   </div>
                   <p class="how-auth-title">Autorizar a <span>Zaldo</span></p>
                   <ul class="how-auth-permissions">
                     <li>
-                      <img src="assets/card-1/google-user.svg" alt="" width="13" height="13" decoding="async">
+                      <img src="assets/card-1/google-user.svg" alt="" width="13" height="13" decoding="async" loading="lazy">
                       <span>Ver tu dirección de correo electrónico</span>
                     </li>
                     <li>
-                      <img src="assets/card-1/google-user.svg" alt="" width="13" height="13" decoding="async">
+                      <img src="assets/card-1/google-user.svg" alt="" width="13" height="13" decoding="async" loading="lazy">
                       <span>Ver tus correos bancarios con Zaldo</span>
                     </li>
                   </ul>
@@ -264,7 +288,7 @@
               <div class="how-mail-mock how-mail-mock--addon">
                 <div class="how-mail-window how-mail-window--addon">
                   <aside class="how-addon-sidebar">
-                    <img class="how-addon-logo" src="assets/card-1/zaldo-icon.svg" alt="" width="24" height="21" decoding="async">
+                    <img class="how-addon-logo" src="assets/card-1/zaldo-icon.svg" alt="" width="24" height="21" decoding="async" loading="lazy">
                     <span class="how-addon-btn">
                       <span class="how-addon-btn-label">Guardar</span>
                       <span class="how-addon-btn-saved">
@@ -718,7 +742,7 @@
         <div class="site-footer-main">
           <div class="site-footer-brand">
             <a href="index.html" class="site-footer-logo" aria-label="Zaldo — inicio">
-              <img src="assets/zaldo-logo-v1.svg" alt="" class="logo-img" width="511" height="195" decoding="async">
+              <img src="assets/zaldo-logo-v1.svg" alt="Zaldo" class="logo-img" width="511" height="195" decoding="async" loading="lazy">
             </a>
             <p class="site-footer-tagline">Convertí los correos de tu banco en un control de gastos automático.</p>
           </div>

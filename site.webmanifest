@@ -4,7 +4,7 @@
   "description": "Tené claro en qué se te va la plata",
   "start_url": "/",
   "display": "standalone",
-  "background_color": "#060e0e",
+  "background_color": "#ffffff",
   "theme_color": "#4FD1C5",
   "icons": [
     {

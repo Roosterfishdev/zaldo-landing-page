@@ -299,4 +299,41 @@
       }
     });
   });
+
+  /* FAQPage JSON-LD derived from the live FAQ markup so Q&A stay in sync. */
+  (function injectFaqJsonLd() {
+    var items = document.querySelectorAll('#faq .faq-item');
+    if (!items.length) return;
+
+    var mainEntity = [];
+    items.forEach(function (item) {
+      var questionEl = item.querySelector('.faq-question span:not(.faq-icon)');
+      var answerEl = item.querySelector('.faq-answer-inner');
+      if (!questionEl || !answerEl) return;
+
+      var question = questionEl.textContent.replace(/\s+/g, ' ').trim();
+      var answer = answerEl.textContent.replace(/\s+/g, ' ').trim();
+      if (!question || !answer) return;
+
+      mainEntity.push({
+        '@type': 'Question',
+        name: question,
+        acceptedAnswer: {
+          '@type': 'Answer',
+          text: answer
+        }
+      });
+    });
+
+    if (!mainEntity.length) return;
+
+    var script = document.createElement('script');
+    script.type = 'application/ld+json';
+    script.textContent = JSON.stringify({
+      '@context': 'https://schema.org',
+      '@type': 'FAQPage',
+      mainEntity: mainEntity
+    });
+    document.head.appendChild(script);
+  })();
 })();
