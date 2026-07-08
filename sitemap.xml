@@ -19,6 +19,13 @@
   </url>
 
   <url>
+    <loc>https://mizaldo.com/waiting-list/</loc>
+    <lastmod>2026-07-07</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+  </url>
+
+  <url>
     <loc>https://mizaldo.com/privacy-policy.html</loc>
     <lastmod>2026-06-28</lastmod>
     <changefreq>yearly</changefreq>

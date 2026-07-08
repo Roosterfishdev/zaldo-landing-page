@@ -4,11 +4,59 @@
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 <title>Funciones — sticky scroll showcase (demo)</title>
-<link rel="preconnect" href="https://fonts.googleapis.com">
-<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=Manrope:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+<link rel="preload" href="assets/aeonik-pro/aeonik-regular.woff" as="font" type="font/woff" crossorigin>
 
 <style>
+@font-face {
+  font-family: 'Aeonik Pro';
+  src: url('assets/aeonik-pro/aeonik-thin.woff') format('woff');
+  font-weight: 100;
+  font-style: normal;
+  font-display: swap;
+}
+@font-face {
+  font-family: 'Aeonik Pro';
+  src: url('assets/aeonik-pro/aeonik-light.woff') format('woff');
+  font-weight: 300;
+  font-style: normal;
+  font-display: swap;
+}
+@font-face {
+  font-family: 'Aeonik Pro';
+  src: url('assets/aeonik-pro/aeonik-regular.woff') format('woff');
+  font-weight: 400;
+  font-style: normal;
+  font-display: swap;
+}
+@font-face {
+  font-family: 'Aeonik Pro';
+  src: url('assets/aeonik-pro/aeonik-medium.woff') format('woff');
+  font-weight: 500;
+  font-style: normal;
+  font-display: swap;
+}
+@font-face {
+  font-family: 'Aeonik Pro';
+  src: url('assets/aeonik-pro/aeonik-medium.woff') format('woff');
+  font-weight: 600;
+  font-style: normal;
+  font-display: swap;
+}
+@font-face {
+  font-family: 'Aeonik Pro';
+  src: url('assets/aeonik-pro/aeonik-bold.woff') format('woff');
+  font-weight: 700;
+  font-style: normal;
+  font-display: swap;
+}
+@font-face {
+  font-family: 'Aeonik Pro';
+  src: url('assets/aeonik-pro/aeonik-bold.woff') format('woff');
+  font-weight: 800;
+  font-style: normal;
+  font-display: swap;
+}
+
 /* ============================================================
    STICKY FEATURE SHOWCASE — "Funciones hechas para que de verdad uses"
    Self-contained. To wire into the landing:
@@ -21,7 +69,7 @@
 /* Demo-page reset — your landing already has these. Safe to drop. */
 *, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
 body {
-  font-family: 'Manrope', system-ui, sans-serif;
+  font-family: 'Aeonik Pro', system-ui, sans-serif;
   background: #ffffff;
   color: #232d2b;
   -webkit-font-smoothing: antialiased;
@@ -84,7 +132,7 @@ body {
 }
 .fx-header h2 {
   font-size: clamp(1.75rem, 4vw, 2.5rem);
-  font-weight: 700;
+  font-weight: 400;
   letter-spacing: -0.03em;
   color: #0f2e2c;
   line-height: 1.2;

@@ -33,11 +33,8 @@
   <link rel="apple-touch-icon" href="/assets/img/favicon/zaldo_128x128.png">
   <link rel="manifest" href="/site.webmanifest">
 
-  <!-- Fonts & styles -->
-  <link rel="preconnect" href="https://fonts.googleapis.com">
-  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link rel="preload" href="https://fonts.googleapis.com/css2?family=Manrope:wght@400;500;600;700&display=swap" as="style">
-  <link href="https://fonts.googleapis.com/css2?family=Manrope:wght@400;500;600;700&display=swap" rel="stylesheet">
+  <!-- Styles -->
+  <link rel="preload" href="assets/aeonik-pro/aeonik-regular.woff" as="font" type="font/woff" crossorigin>
   <link rel="stylesheet" href="assets/css/styles.css">
 
   <script type="application/ld+json">
@@ -85,11 +82,8 @@
           </ul>
         </nav>
         <div class="nav-cta">
-          <a href="https://app.mizaldo.com/" class="btn btn--ghost nav-login">
-            <span>Iniciar sesión</span>
-          </a>
-          <a href="https://app.mizaldo.com/" class="btn btn--dark">
-            <span>Empezá gratis</span>
+          <a href="waiting-list/" class="btn btn--dark">
+            <span>Unirme a la lista de espera</span>
           </a>
         </div>
       </div>
@@ -108,15 +102,12 @@
         Convertí los correos de tu banco en un control de gastos automático. Sin anotar nada a mano, sin hojas de Excel<span class="subheadline-tail">, sin adivinar a fin de mes. Solo claridad</span>.
       </p>
 
-      <div class="cta-group">
-        <a href="https://app.mizaldo.com/" class="btn btn--dark">
-          <span>Empezá gratis</span>
+      <div class="cta-group cta-group--solo">
+        <a href="waiting-list/" class="btn btn--dark">
+          <span>Unirme a la lista de espera</span>
           <span class="btn-icon">
             <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M5 12h14M13 6l6 6-6 6"/></svg>
           </span>
-        </a>
-        <a href="#how-it-works" class="btn btn--soft">
-          <span>Cómo funciona<span class="btn-q-mobile">?</span></span>
         </a>
       </div>
     </div>
@@ -335,10 +326,9 @@
           </div>
         </article>
       </div>
-      <p class="trust-note">🔒 Zaldo nunca ve tus contraseñas ni entra a tu banca en línea. Solo lee los correos de notificación que vos ya recibís.</p>
       <div class="how-cta">
-        <a href="https://app.mizaldo.com/" class="btn btn--primary">
-          <span>Empezá gratis</span>
+        <a href="waiting-list/" class="btn btn--primary">
+          <span>Unirme a la lista de espera</span>
           <span class="btn-icon">
             <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M5 12h14M13 6l6 6-6 6"/></svg>
           </span>
@@ -361,40 +351,8 @@
             <h3>Complemento de Google</h3>
             <p>Olvidate de meter cada compra a mano. Los correos de tu banco se convierten en transacciones ordenadas y categorizadas, automáticamente. Vos solo revisás.</p>
           </div>
-          <div class="features-bento-visual" aria-hidden="true">
-            <div class="feat-addon-mock">
-              <div class="feat-addon-gmail">
-                <div class="feat-addon-gmail-head">
-                  <span class="feat-addon-dots"><span></span><span></span><span></span></span>
-                  <span>Gmail</span>
-                </div>
-                <ul class="feat-addon-inbox">
-                  <li class="feat-addon-mail feat-addon-mail--active">
-                    <span class="feat-addon-mail-from">BAC Credomatic</span>
-                    <span class="feat-addon-mail-subject">Compra ₡12,450 · Automercado</span>
-                  </li>
-                  <li class="feat-addon-mail">
-                    <span class="feat-addon-mail-from">Promerica</span>
-                    <span class="feat-addon-mail-subject">Compra aprobada</span>
-                  </li>
-                  <li class="feat-addon-mail">
-                    <span class="feat-addon-mail-from">BAC Credomatic</span>
-                    <span class="feat-addon-mail-subject">Compra ₡8,200 · Uber</span>
-                  </li>
-                </ul>
-              </div>
-              <div class="feat-addon-panel">
-                <div class="feat-addon-panel-head">
-                  <span class="feat-addon-logo">Zaldo</span>
-                  <span class="feat-addon-badge">3 nuevas</span>
-                </div>
-                <ul class="feat-addon-txs">
-                  <li><span>Automercado</span><strong>-₡12,450</strong></li>
-                  <li><span>Uber</span><strong>-₡8,200</strong></li>
-                  <li><span>Netflix</span><strong>-₡5,990</strong></li>
-                </ul>
-              </div>
-            </div>
+          <div class="features-bento-visual features-bento-visual--dashboard">
+            <img src="assets/features/zaldo-dashboard.png" alt="Dashboard de Zaldo con gastos, ingresos y transacciones del mes" width="3376" height="860" loading="lazy">
           </div>
         </article>
 
@@ -403,30 +361,8 @@
             <h3>Categorías a tu manera</h3>
             <p>Organizá tus gastos en categorías y subcategorías que tengan sentido para vos. Comida, transporte, suscripciones, lo que sea.</p>
           </div>
-          <div class="features-bento-visual" aria-hidden="true">
-            <div class="feat-cat-mock">
-              <div class="feat-cat-item feat-cat-item--food">
-                <span class="feat-cat-dot"></span>
-                <span>Comida</span>
-                <span class="feat-cat-pct">28%</span>
-              </div>
-              <div class="feat-cat-item feat-cat-item--transport">
-                <span class="feat-cat-dot"></span>
-                <span>Transporte</span>
-                <span class="feat-cat-pct">14%</span>
-              </div>
-              <div class="feat-cat-item feat-cat-item--super">
-                <span class="feat-cat-dot"></span>
-                <span>Supermercado</span>
-                <span class="feat-cat-pct">22%</span>
-              </div>
-              <div class="feat-cat-item feat-cat-item--subs">
-                <span class="feat-cat-dot"></span>
-                <span>Suscripciones</span>
-                <span class="feat-cat-pct">9%</span>
-              </div>
-              <button type="button" class="feat-cat-add" tabindex="-1">+ Nueva categoría</button>
-            </div>
+          <div class="features-bento-visual features-bento-visual--categories">
+            <img src="assets/features/cat-ez.png" alt="Pantalla de categorías en Zaldo" width="1937" height="2261" loading="lazy">
           </div>
         </article>
 
@@ -609,7 +545,7 @@
               <span class="pricing-amount">0</span>
               <span class="pricing-period">/ para siempre</span>
             </div>
-            <a href="https://app.mizaldo.com/" class="pricing-cta pricing-cta--outline">Empezá gratis</a>
+            <a href="waiting-list/" class="pricing-cta pricing-cta--outline">Unirme a la lista de espera</a>
           </div>
           <div class="pricing-card-features">
             <ul class="pricing-features">
@@ -631,7 +567,7 @@
               <span class="pricing-amount" id="pricingAmount">5.99</span>
               <span class="pricing-period" id="pricingPeriod">/ mes</span>
             </div>
-            <a href="https://app.mizaldo.com/" class="pricing-cta pricing-cta--solid">Empezá tu prueba de 7 días</a>
+            <a href="waiting-list/" class="pricing-cta pricing-cta--solid">Unirme a la lista de espera</a>
           </div>
           <div class="pricing-card-features">
             <ul class="pricing-features">
@@ -730,8 +666,8 @@
         <h2>Tomá el control de tu plata hoy</h2>
         <p>Empezá gratis en menos de un minuto. Sin tarjeta, sin compromiso.<br>Date cuenta de a dónde se va tu dinero.</p>
         <div class="cta-group">
-          <a href="https://app.mizaldo.com/" class="btn btn--dark">
-            <span>Empezá gratis</span>
+          <a href="waiting-list/" class="btn btn--dark">
+            <span>Unirme a la lista de espera</span>
           </a>
         </div>
       </div>
@@ -758,8 +694,7 @@
             <div class="site-footer-col">
               <h3>Cuenta</h3>
               <ul>
-                <li><a href="https://app.mizaldo.com/">Iniciar sesión</a></li>
-                <li><a href="https://app.mizaldo.com/">Empezá gratis</a></li>
+                <li><a href="waiting-list/">Unirme a la lista de espera</a></li>
               </ul>
             </div>
             <div class="site-footer-col">

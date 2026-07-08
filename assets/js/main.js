@@ -336,4 +336,20 @@
     });
     document.head.appendChild(script);
   })();
+
+  /* Waiting list form: show success message after submit (ezlaunch still captures the lead). */
+  (function initWaitlistForm() {
+    var form = document.getElementById('waitlist-form');
+    if (!form) return;
+
+    var card = form.closest('.waitlist-card');
+    var success = document.getElementById('waitlist-success');
+    if (!card || !success) return;
+
+    form.addEventListener('submit', function () {
+      if (!form.checkValidity()) return;
+      card.classList.add('is-success');
+      success.hidden = false;
+    });
+  })();
 })();
