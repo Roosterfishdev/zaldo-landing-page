@@ -231,16 +231,29 @@
     }
   }
 
-  var billingBtns = document.querySelectorAll('.billing-toggle-label[data-billing]');
+  var billingBtns = document.querySelectorAll('.billing-toggle-option[data-billing]');
   var billingToggle = document.querySelector('.billing-toggle');
-  var billingTrack = document.querySelector('.billing-toggle-track');
   var pricingAmount = document.getElementById('pricingAmount');
   var pricingPeriod = document.getElementById('pricingPeriod');
+  var pricingCompare = document.getElementById('pricingCompare');
+  var pricingBilled = document.getElementById('pricingBilled');
 
   if (billingBtns.length && pricingAmount) {
     var prices = {
-      monthly: { currency: '$', amount: '5.99', period: '/ mes' },
-      annually: { currency: '$', amount: '59.99', period: '/ año' }
+      monthly: {
+        currency: '$',
+        amount: '4.99',
+        period: '/ mes',
+        compare: '',
+        billed: ''
+      },
+      annually: {
+        currency: '$',
+        amount: '2.99',
+        period: '/ mes',
+        compare: '$4.99',
+        billed: 'Facturado anualmente a $35.88'
+      }
     };
 
     function setBilling(billing) {
@@ -258,6 +271,22 @@
       }
       pricingAmount.textContent = price.amount;
       if (pricingPeriod) pricingPeriod.textContent = price.period;
+      if (pricingCompare) {
+        if (price.compare) {
+          pricingCompare.textContent = price.compare;
+          pricingCompare.hidden = false;
+        } else {
+          pricingCompare.hidden = true;
+        }
+      }
+      if (pricingBilled) {
+        if (price.billed) {
+          pricingBilled.textContent = price.billed;
+          pricingBilled.hidden = false;
+        } else {
+          pricingBilled.hidden = true;
+        }
+      }
     }
 
     billingBtns.forEach(function (btn) {
@@ -265,13 +294,6 @@
         setBilling(btn.dataset.billing);
       });
     });
-
-    if (billingTrack) {
-      billingTrack.addEventListener('click', function () {
-        var isAnnual = billingToggle && billingToggle.classList.contains('is-annual');
-        setBilling(isAnnual ? 'monthly' : 'annually');
-      });
-    }
   }
 
   document.querySelectorAll('.faq-question').forEach(function (btn) {

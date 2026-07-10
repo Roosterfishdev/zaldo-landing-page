@@ -520,17 +520,13 @@
   <section id="pricing" class="pricing">
     <div class="pricing-inner">
       <header class="pricing-header">
-        <p class="section-eyebrow">Precios claros, sin letra chica</p>
-        <h2>Empezá gratis. Subí a Pro cuando lo necesités.</h2>
-        <p>Sin cobros escondidos, sin sorpresas. Elegí el plan que te sirva y cambiá cuando querás.</p>
+        <h2>Precios simples y transparentes</h2>
+        <p>Elegí el plan que te sirva. Sin cobros escondidos.</p>
         <div class="billing-toggle" role="group" aria-label="Período de facturación">
-          <button type="button" class="billing-toggle-label active" data-billing="monthly" aria-pressed="true">Mensual</button>
-          <button type="button" class="billing-toggle-track" aria-label="Cambiar período de facturación">
-            <span class="billing-toggle-knob"></span>
-          </button>
-          <button type="button" class="billing-toggle-label" data-billing="annually" aria-pressed="false">
+          <button type="button" class="billing-toggle-option active" data-billing="monthly" aria-pressed="true">Mensual</button>
+          <button type="button" class="billing-toggle-option" data-billing="annually" aria-pressed="false">
             Anual
-            <span class="billing-badge">2 meses gratis</span>
+            <span class="billing-badge">Ahorrá 30%</span>
           </button>
         </div>
       </header>
@@ -558,15 +554,16 @@
         </article>
 
         <article class="pricing-card pricing-card--pro">
-          <span class="pricing-recommended">Recomendado</span>
           <div class="pricing-card-top">
-            <h3 class="pricing-plan">Pro</h3>
+            <h3 class="pricing-plan">Pro <span class="pricing-recommended">Recomendado</span></h3>
             <p class="pricing-desc">Automatización y control total de tus finanzas.</p>
             <div class="pricing-price">
+              <span class="pricing-compare" id="pricingCompare" hidden>$4.99</span>
               <span class="pricing-currency" id="pricingCurrency">$</span>
-              <span class="pricing-amount" id="pricingAmount">5.99</span>
+              <span class="pricing-amount" id="pricingAmount">4.99</span>
               <span class="pricing-period" id="pricingPeriod">/ mes</span>
             </div>
+            <p class="pricing-billed" id="pricingBilled" hidden>Facturado anualmente a $35.88</p>
             <a href="waiting-list/" class="pricing-cta pricing-cta--solid">Unirme a la lista de espera</a>
           </div>
           <div class="pricing-card-features">
