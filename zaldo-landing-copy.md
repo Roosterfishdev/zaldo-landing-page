@@ -192,10 +192,10 @@ Sin cobros escondidos, sin sorpresas. Elegí el plan que te sirva y cambiá cuan
 - Reportes de todos los meses (historial completo)
 - Soporte prioritario
 
-**Botón:** Empezá tu prueba de 7 días
+**Botón:** Empezá tu prueba de 14 días
 
 **Microcopy:**
-Gratis por 7 días. Cancelá cuando querás, sin enredos.
+Gratis por 14 días. Cancelá cuando querás, sin enredos.
 
 ---
 

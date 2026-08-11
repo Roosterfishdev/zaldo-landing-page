@@ -46,8 +46,7 @@
       'section:not(.hero) .how-step-card',
       'section:not(.hero) .features-bento-card',
       'section:not(.hero) .trust-note',
-      'section:not(.hero) .how-cta',
-      'section:not(.hero) .savings-inner > *',
+      'section:not(.hero) .cta-mid-inner > *',
       'section:not(.hero) .reviews-header',
       'section:not(.hero) .pricing-header',
       'section:not(.hero) .pricing-card',
@@ -359,19 +358,4 @@
     document.head.appendChild(script);
   })();
 
-  /* Waiting list form: show success message after submit (ezlaunch still captures the lead). */
-  (function initWaitlistForm() {
-    var form = document.getElementById('waitlist-form');
-    if (!form) return;
-
-    var card = form.closest('.waitlist-card');
-    var success = document.getElementById('waitlist-success');
-    if (!card || !success) return;
-
-    form.addEventListener('submit', function () {
-      if (!form.checkValidity()) return;
-      card.classList.add('is-success');
-      success.hidden = false;
-    });
-  })();
 })();

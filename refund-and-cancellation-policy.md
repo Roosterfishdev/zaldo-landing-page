@@ -16,7 +16,7 @@ Zaldo offers a free plan and a paid **Pro** plan, available on a **monthly** or 
 
 ## 2. Free trial
 
-The Pro plan may be offered with a **7-day free trial**. 
+The Pro plan may be offered with a **14-day free trial**. 
 
 - You will **not** be charged during the trial.
 - If you do not cancel before the trial ends, your subscription automatically converts to a paid plan and your payment method is charged at the price shown at checkout.

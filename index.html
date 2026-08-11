@@ -35,6 +35,7 @@
 
   <!-- Styles -->
   <link rel="preload" href="assets/aeonik-pro/aeonik-regular.woff" as="font" type="font/woff" crossorigin>
+  <link rel="preload" href="assets/aeonik-pro/aeonik-bold.woff" as="font" type="font/woff" crossorigin>
   <link rel="stylesheet" href="assets/css/styles.css">
 
   <script type="application/ld+json">
@@ -77,14 +78,13 @@
       <div class="nav-actions" id="nav-menu">
         <nav aria-label="Principal">
           <ul class="nav-links">
-            <li><a href="#features">Funciones</a></li>
             <li><a href="#how-it-works">Cómo funciona</a></li>
             <li><a href="#pricing">Precio</a></li>
           </ul>
         </nav>
         <div class="nav-cta">
-          <a href="waiting-list/" class="btn btn--dark">
-            <span>Unirme a la lista de espera</span>
+          <a href="https://app.mizaldo.com/" class="btn btn--dark">
+            <span>Empezar gratis</span>
           </a>
         </div>
       </div>
@@ -104,8 +104,8 @@
       </p>
 
       <div class="cta-group cta-group--solo">
-        <a href="waiting-list/" class="btn btn--dark">
-          <span>Unirme a la lista de espera</span>
+        <a href="https://app.mizaldo.com/" class="btn btn--dark">
+          <span>Probar gratis 14 días</span>
           <span class="btn-icon">
             <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M5 12h14M13 6l6 6-6 6"/></svg>
           </span>
@@ -172,10 +172,17 @@
       <header class="needs-header">
         <p class="section-eyebrow">Así de fácil</p>
         <h2>De un correo del banco <br> a tu control de gastos.</h2>
-        <p>Cada vez que comprás, tu banco te manda un correo. Zaldo lo lee por vos y lo convierte en una transacción ordenada y categorizada. Vos no hacés nada.</p>
+        <p>Cada vez que comprás, tu banco te manda un correo. Zaldo lo lee por vos, lo organiza y te lo muestra donde ya lo necesitás: en tu dashboard, tus categorías y tus reportes.</p>
       </header>
       <div class="needs-grid how-grid">
         <article class="how-step-card">
+          <div class="how-feature-icon" aria-hidden="true">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"/><polyline points="22,6 12,13 2,6"/></svg>
+          </div>
+          <div class="how-step-copy">
+            <h3>Conectás tu Gmail en un toque</h3>
+            <p>Autorizás el complemento de Google y Zaldo empieza a leer los correos de tu banco. Nada de contraseñas.</p>
+          </div>
           <div class="how-step-visual" aria-hidden="true">
             <div class="how-step-scene">
               <div class="how-auth-mock">
@@ -212,308 +219,353 @@
               </div>
             </div>
           </div>
-          <div class="how-step-copy">
-            <h3>Conectás Zaldo a tu Gmail</h3>
-            <p>Instalás el complemento en un toque. Zaldo solo lee los correos de notificación de tu banco, nada más.</p>
-          </div>
         </article>
 
         <article class="how-step-card">
-          <div class="how-step-visual" aria-hidden="true">
-            <div class="how-step-scene">
-              <div class="how-mail-mock">
-                <div class="how-mail-window">
-                  <header class="how-mail-chrome">
-                    <span class="how-mail-chrome-title">Compra con tu tarjeta</span>
-                    <div class="how-mail-chrome-actions">
-                      <span></span><span></span><span></span>
-                    </div>
-                  </header>
-                  <div class="how-mail-fields">
-                    <div class="how-mail-field">
-                      <span class="how-mail-field-label">De</span>
-                      <span class="how-mail-field-value">BAC Credomatic</span>
-                    </div>
-                    <div class="how-mail-field">
-                      <span class="how-mail-field-label">Para</span>
-                      <span class="how-mail-field-value">juan.perez@gmail.com</span>
-                    </div>
-                    <div class="how-mail-field how-mail-field--subject">
-                      <span class="how-mail-field-label">Asunto</span>
-                      <span class="how-mail-field-value">Compra aprobada — VISA ****0940</span>
-                    </div>
-                  </div>
-                  <div class="how-mail-body">
-                    <p class="how-mail-greeting">Hola, Juan Perez <span aria-hidden="true">👋</span></p>
-                    <dl class="how-mail-receipt">
-                      <div class="how-mail-receipt-row">
-                        <dt>Comercio</dt>
-                        <dd>Joe's Pizzeria</dd>
-                      </div>
-                      <div class="how-mail-receipt-row">
-                        <dt>Fecha</dt>
-                        <dd>Abr 4, 2026, 22:26</dd>
-                      </div>
-                      <div class="how-mail-receipt-row">
-                        <dt>VISA</dt>
-                        <dd>**** **** 0940</dd>
-                      </div>
-                      <div class="how-mail-receipt-row">
-                        <dt>Tipo</dt>
-                        <dd>COMPRA</dd>
-                      </div>
-                    </dl>
-                  </div>
+          <div class="how-feature-icon" aria-hidden="true">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect x="3" y="3" width="7" height="7" rx="1.5"/><rect x="14" y="3" width="7" height="7" rx="1.5"/><rect x="14" y="14" width="7" height="7" rx="1.5"/><rect x="3" y="14" width="7" height="7" rx="1.5"/></svg>
+          </div>
+          <div class="how-step-copy">
+            <h3>Todo tu mes, de un vistazo</h3>
+            <p>Gastos, ingresos, transacciones y tu límite mensual, en una sola pantalla.</p>
+          </div>
+          <div class="how-feature-visual how-feature-visual--dashboard-mock" aria-hidden="true">
+            <div class="dash-mock">
+              <div class="dash-mock-top">
+                <span class="dash-mock-title">Dashboard</span>
+                <div class="dash-mock-icons">
+                  <span class="dash-mock-icon-btn">
+                    <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M18 8a6 6 0 10-12 0c0 7-3 9-3 9h18s-3-2-3-9"/><path d="M13.73 21a2 2 0 01-3.46 0"/></svg>
+                  </span>
+                  <span class="dash-mock-icon-btn">
+                    <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="3"/><path d="M19.4 15a1.65 1.65 0 00.33 1.82l.06.06a2 2 0 11-2.83 2.83l-.06-.06a1.65 1.65 0 00-1.82-.33 1.65 1.65 0 00-1 1.51V21a2 2 0 11-4 0v-.09A1.65 1.65 0 009 19.4a1.65 1.65 0 00-1.82.33l-.06.06a2 2 0 11-2.83-2.83l.06-.06a1.65 1.65 0 00.33-1.82 1.65 1.65 0 00-1.51-1H3a2 2 0 110-4h.09A1.65 1.65 0 004.6 9a1.65 1.65 0 00-.33-1.82l-.06-.06a2 2 0 112.83-2.83l.06.06a1.65 1.65 0 001.82.33H9a1.65 1.65 0 001-1.51V3a2 2 0 114 0v.09a1.65 1.65 0 001 1.51 1.65 1.65 0 001.82-.33l.06-.06a2 2 0 112.83 2.83l-.06.06a1.65 1.65 0 00-.33 1.82V9a1.65 1.65 0 001.51 1H21a2 2 0 110 4h-.09a1.65 1.65 0 00-1.51 1z"/></svg>
+                  </span>
                 </div>
               </div>
-            </div>
-          </div>
-          <div class="how-step-copy">
-            <h3>Llega un correo de tu banco</h3>
-            <p>Comprás algo con tu tarjeta BAC o Promerica. El banco te manda la notificación de siempre.</p>
-          </div>
-        </article>
-
-        <article class="how-step-card">
-          <div class="how-step-visual" aria-hidden="true">
-            <div class="how-step-scene">
-              <div class="how-mail-mock how-mail-mock--addon">
-                <div class="how-mail-window how-mail-window--addon">
-                  <aside class="how-addon-sidebar">
-                    <img class="how-addon-logo" src="assets/card-1/zaldo-icon.svg" alt="" width="24" height="21" decoding="async" loading="lazy">
-                    <span class="how-addon-btn">
-                      <span class="how-addon-btn-label">Guardar</span>
-                      <span class="how-addon-btn-saved">
-                        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="3" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M5 12l5 5L20 7"/></svg>
-                        Guardado
-                      </span>
+              <div class="dash-mock-row">
+                <span class="dash-mock-date">
+                  <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect x="3" y="4" width="18" height="18" rx="2"/><line x1="16" y1="2" x2="16" y2="6"/><line x1="8" y1="2" x2="8" y2="6"/><line x1="3" y1="10" x2="21" y2="10"/></svg>
+                  Ago 2026
+                </span>
+                <span class="dash-mock-currency">
+                  <span class="dash-mock-currency-off">$</span>
+                  <span class="dash-mock-currency-on">₡</span>
+                </span>
+                <span class="dash-mock-add">
+                  <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><line x1="12" y1="5" x2="12" y2="19"/><line x1="5" y1="12" x2="19" y2="12"/></svg>
+                </span>
+              </div>
+              <div class="dash-mock-card dash-mock-card--expense">
+                <span class="dash-mock-chevron">‹</span>
+                <div class="dash-mock-expense-info">
+                  <span class="dash-mock-label">Gastos del mes</span>
+                  <span class="dash-mock-amount">₡312,960</span>
+                </div>
+                <span class="dash-mock-chevron">›</span>
+              </div>
+              <div class="dash-mock-card dash-mock-card--limit">
+                <div class="dash-mock-limit-rows">
+                  <div class="dash-mock-limit-row">
+                    <span class="dash-mock-limit-icon">
+                      <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="10"/><circle cx="12" cy="12" r="6"/><circle cx="12" cy="12" r="2"/></svg>
                     </span>
-                  </aside>
-                  <header class="how-mail-chrome">
-                    <span class="how-mail-chrome-title">Compra con tu tarjeta</span>
-                    <div class="how-mail-chrome-actions">
-                      <span></span><span></span><span></span>
-                    </div>
-                  </header>
-                  <div class="how-mail-fields">
-                    <div class="how-mail-field">
-                      <span class="how-mail-field-label">De</span>
-                      <span class="how-mail-field-value">BAC Credomatic</span>
-                    </div>
-                    <div class="how-mail-field">
-                      <span class="how-mail-field-label">Para</span>
-                      <span class="how-mail-field-value">juan.perez@gmail.com</span>
-                    </div>
-                    <div class="how-mail-field how-mail-field--subject">
-                      <span class="how-mail-field-label">Asunto</span>
-                      <span class="how-mail-field-value">Compra aprobada — VISA ****0940</span>
+                    <div>
+                      <span class="dash-mock-limit-label">Límite de gastos</span>
+                      <span class="dash-mock-limit-value">₡800,000</span>
                     </div>
                   </div>
-                  <div class="how-mail-body how-mail-body--placeholder">
-                    <div class="how-mail-placeholder">
-                      <span></span>
-                      <span></span>
-                      <span></span>
-                      <span></span>
+                  <div class="dash-mock-limit-row">
+                    <span class="dash-mock-limit-icon">
+                      <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect x="1" y="4" width="22" height="16" rx="2"/><line x1="1" y1="10" x2="23" y2="10"/></svg>
+                    </span>
+                    <div>
+                      <span class="dash-mock-limit-label">Disponible</span>
+                      <span class="dash-mock-limit-value">₡487,040</span>
                     </div>
+                  </div>
+                </div>
+                <div class="dash-mock-donut">
+                  <svg viewBox="0 0 60 60">
+                    <circle cx="30" cy="30" r="24" fill="none" stroke="#e4eceb" stroke-width="7"/>
+                    <circle cx="30" cy="30" r="24" fill="none" stroke="#4FD1C5" stroke-width="7" stroke-linecap="round" stroke-dasharray="150.8" stroke-dashoffset="91.5" transform="rotate(-90 30 30)"/>
+                  </svg>
+                  <span class="dash-mock-donut-label">39%</span>
+                </div>
+              </div>
+            </div>
+          </div>
+        </article>
+
+        <article class="how-step-card">
+          <div class="how-feature-icon" aria-hidden="true">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><line x1="8" y1="6" x2="21" y2="6"/><line x1="8" y1="12" x2="21" y2="12"/><line x1="8" y1="18" x2="21" y2="18"/><line x1="3" y1="6" x2="3.01" y2="6"/><line x1="3" y1="12" x2="3.01" y2="12"/><line x1="3" y1="18" x2="3.01" y2="18"/></svg>
+          </div>
+          <div class="how-step-copy">
+            <h3>Cada movimiento, ordenado</h3>
+            <p>Buscá, filtrá y revisá tus compras con el comercio, el banco y la categoría a mano.</p>
+          </div>
+          <div class="how-feature-visual how-feature-visual--transacciones-mock" aria-hidden="true">
+            <div class="tx-mock">
+              <div class="dash-mock-top">
+                <span class="dash-mock-title">Transacciones</span>
+                <div class="dash-mock-icons">
+                  <span class="dash-mock-icon-btn">
+                    <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M18 8a6 6 0 10-12 0c0 7-3 9-3 9h18s-3-2-3-9"/><path d="M13.73 21a2 2 0 01-3.46 0"/></svg>
+                  </span>
+                  <span class="dash-mock-icon-btn">
+                    <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="3"/><path d="M19.4 15a1.65 1.65 0 00.33 1.82l.06.06a2 2 0 11-2.83 2.83l-.06-.06a1.65 1.65 0 00-1.82-.33 1.65 1.65 0 00-1 1.51V21a2 2 0 11-4 0v-.09A1.65 1.65 0 009 19.4a1.65 1.65 0 00-1.82.33l-.06.06a2 2 0 11-2.83-2.83l.06-.06a1.65 1.65 0 00.33-1.82 1.65 1.65 0 00-1.51-1H3a2 2 0 110-4h.09A1.65 1.65 0 004.6 9a1.65 1.65 0 00-.33-1.82l-.06-.06a2 2 0 112.83-2.83l.06.06a1.65 1.65 0 001.82.33H9a1.65 1.65 0 001-1.51V3a2 2 0 114 0v.09a1.65 1.65 0 001 1.51 1.65 1.65 0 001.82-.33l.06-.06a2 2 0 112.83 2.83l-.06.06a1.65 1.65 0 00-.33 1.82V9a1.65 1.65 0 001.51 1H21a2 2 0 110 4h-.09a1.65 1.65 0 00-1.51 1z"/></svg>
+                  </span>
+                </div>
+              </div>
+              <div class="dash-mock-row">
+                <span class="dash-mock-date">
+                  <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect x="3" y="4" width="18" height="18" rx="2"/><line x1="16" y1="2" x2="16" y2="6"/><line x1="8" y1="2" x2="8" y2="6"/><line x1="3" y1="10" x2="21" y2="10"/></svg>
+                  Ago 2026
+                </span>
+                <span class="dash-mock-currency">
+                  <span class="dash-mock-currency-off">$</span>
+                  <span class="dash-mock-currency-on">₡</span>
+                </span>
+                <span class="dash-mock-add">
+                  <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><line x1="12" y1="5" x2="12" y2="19"/><line x1="5" y1="12" x2="19" y2="12"/></svg>
+                </span>
+              </div>
+              <div class="tx-mock-search-row">
+                <span class="tx-mock-search">
+                  <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="11" cy="11" r="8"/><line x1="21" y1="21" x2="16.65" y2="16.65"/></svg>
+                  <span>Buscar comercio...</span>
+                </span>
+                <span class="dash-mock-icon-btn">
+                  <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><line x1="4" y1="6" x2="20" y2="6"/><line x1="7" y1="12" x2="17" y2="12"/><line x1="10" y1="18" x2="14" y2="18"/></svg>
+                </span>
+              </div>
+              <div class="tx-mock-list">
+                <div class="tx-mock-item">
+                  <div class="tx-mock-item-top">
+                    <span class="tx-mock-merchant">3 Perros</span>
+                    <span class="tx-mock-amount">₡15,000</span>
+                  </div>
+                  <div class="tx-mock-item-bottom">
+                    <span class="tx-mock-meta">SINPE · 10/08</span>
+                    <span class="tx-mock-tag tx-mock-tag--food">Comida</span>
+                  </div>
+                </div>
+                <div class="tx-mock-item">
+                  <div class="tx-mock-item-top">
+                    <span class="tx-mock-merchant">Bomba Casaque</span>
+                    <span class="tx-mock-amount">₡52,085</span>
+                  </div>
+                  <div class="tx-mock-item-bottom">
+                    <span class="tx-mock-meta">BAC •••• 0940 · 09/08</span>
+                    <span class="tx-mock-tag tx-mock-tag--transport">Transporte</span>
+                  </div>
+                </div>
+                <div class="tx-mock-item">
+                  <div class="tx-mock-item-top">
+                    <span class="tx-mock-merchant">Sushi Home</span>
+                    <span class="tx-mock-amount">₡24,495</span>
+                  </div>
+                  <div class="tx-mock-item-bottom">
+                    <span class="tx-mock-meta">BAC •••• 0940 · 09/08</span>
+                    <span class="tx-mock-tag tx-mock-tag--food">Comida</span>
                   </div>
                 </div>
               </div>
             </div>
           </div>
+        </article>
+
+        <article class="how-step-card">
+          <div class="how-feature-icon" aria-hidden="true">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M20.59 13.41L13.42 20.59a2 2 0 01-2.83 0L2 12V2h10l8.59 8.59a2 2 0 010 2.82z"/><line x1="7" y1="7" x2="7.01" y2="7"/></svg>
+          </div>
           <div class="how-step-copy">
-            <h3>Guardás desde Gmail con el Addon y llega a tu dashboard</h3>
-            <p>Zaldo detecta el monto, el comercio y la categoría. Lo ves en tu dashboard sin haber tipeado una sola tecla.</p>
+            <h3>Todo categorizado al toque</h3>
+            <p>Cada compra cae en su categoría y subcategoría. Ajustás lo que haga falta en un par de taps.</p>
+          </div>
+          <div class="how-feature-visual how-feature-visual--categorias-mock" aria-hidden="true">
+            <div class="cat-mock">
+              <div class="dash-mock-top">
+                <span class="dash-mock-title">Categorías</span>
+                <div class="dash-mock-icons">
+                  <span class="dash-mock-icon-btn">
+                    <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M18 8a6 6 0 10-12 0c0 7-3 9-3 9h18s-3-2-3-9"/><path d="M13.73 21a2 2 0 01-3.46 0"/></svg>
+                  </span>
+                  <span class="dash-mock-icon-btn">
+                    <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="3"/><path d="M19.4 15a1.65 1.65 0 00.33 1.82l.06.06a2 2 0 11-2.83 2.83l-.06-.06a1.65 1.65 0 00-1.82-.33 1.65 1.65 0 00-1 1.51V21a2 2 0 11-4 0v-.09A1.65 1.65 0 009 19.4a1.65 1.65 0 00-1.82.33l-.06.06a2 2 0 11-2.83-2.83l.06-.06a1.65 1.65 0 00.33-1.82 1.65 1.65 0 00-1.51-1H3a2 2 0 110-4h.09A1.65 1.65 0 004.6 9a1.65 1.65 0 00-.33-1.82l-.06-.06a2 2 0 112.83-2.83l.06.06a1.65 1.65 0 001.82.33H9a1.65 1.65 0 001-1.51V3a2 2 0 114 0v.09a1.65 1.65 0 001 1.51 1.65 1.65 0 001.82-.33l.06-.06a2 2 0 112.83 2.83l-.06.06a1.65 1.65 0 00-.33 1.82V9a1.65 1.65 0 001.51 1H21a2 2 0 110 4h-.09a1.65 1.65 0 00-1.51 1z"/></svg>
+                  </span>
+                  <span class="dash-mock-add">
+                    <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><line x1="12" y1="5" x2="12" y2="19"/><line x1="5" y1="12" x2="19" y2="12"/></svg>
+                  </span>
+                </div>
+              </div>
+              <p class="cat-mock-intro">Organizá tus gastos. Empezás con un set por defecto y podés crear las tuyas.</p>
+              <div class="cat-mock-card">
+                <div class="cat-mock-card-top">
+                  <span class="cat-mock-icon">
+                    <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M18 2v6a3 3 0 003 3v11"/><path d="M8 2v9a3 3 0 003 3h0"/><path d="M11 2v20"/><path d="M8 2H6a1 1 0 00-1 1v6a2 2 0 002 2h1"/></svg>
+                  </span>
+                  <div class="cat-mock-info">
+                    <span class="cat-mock-name">Comida</span>
+                    <span class="cat-mock-default">Por defecto</span>
+                  </div>
+                  <span class="cat-mock-amount">₡120,000<small>/ mes</small></span>
+                </div>
+                <hr class="cat-mock-divider">
+                <span class="cat-mock-sublabel">Subcategorías</span>
+                <div class="cat-mock-subs">
+                  <div class="cat-mock-sub">
+                    <span class="cat-mock-sub-name">Restaurantes</span>
+                    <span class="cat-mock-sub-limit">₡80,000 / mes</span>
+                  </div>
+                  <div class="cat-mock-sub">
+                    <span class="cat-mock-sub-name">Súper</span>
+                    <span class="cat-mock-sub-limit">₡50,000 / mes</span>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </article>
+
+        <article class="how-step-card">
+          <div class="how-feature-icon" aria-hidden="true">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M18 20V10M12 20V4M6 20v-6"/></svg>
+          </div>
+          <div class="how-step-copy">
+            <h3>Reportes claros cada mes</h3>
+            <p>Mirá cómo se compara tu gasto semana a semana y a dónde se va tu plata.</p>
+          </div>
+          <div class="how-feature-visual how-feature-visual--reportes-mock" aria-hidden="true">
+            <div class="rep-mock">
+              <div class="dash-mock-top">
+                <span class="dash-mock-title">Reportes</span>
+                <div class="dash-mock-icons">
+                  <span class="dash-mock-icon-btn">
+                    <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M18 8a6 6 0 10-12 0c0 7-3 9-3 9h18s-3-2-3-9"/><path d="M13.73 21a2 2 0 01-3.46 0"/></svg>
+                  </span>
+                  <span class="dash-mock-icon-btn">
+                    <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="3"/><path d="M19.4 15a1.65 1.65 0 00.33 1.82l.06.06a2 2 0 11-2.83 2.83l-.06-.06a1.65 1.65 0 00-1.82-.33 1.65 1.65 0 00-1 1.51V21a2 2 0 11-4 0v-.09A1.65 1.65 0 009 19.4a1.65 1.65 0 00-1.82.33l-.06.06a2 2 0 11-2.83-2.83l.06-.06a1.65 1.65 0 00.33-1.82 1.65 1.65 0 00-1.51-1H3a2 2 0 110-4h.09A1.65 1.65 0 004.6 9a1.65 1.65 0 00-.33-1.82l-.06-.06a2 2 0 112.83-2.83l.06.06a1.65 1.65 0 001.82.33H9a1.65 1.65 0 001-1.51V3a2 2 0 114 0v.09a1.65 1.65 0 001 1.51 1.65 1.65 0 001.82-.33l.06-.06a2 2 0 112.83 2.83l-.06.06a1.65 1.65 0 00-.33 1.82V9a1.65 1.65 0 001.51 1H21a2 2 0 110 4h-.09a1.65 1.65 0 00-1.51 1z"/></svg>
+                  </span>
+                </div>
+              </div>
+              <div class="dash-mock-row">
+                <span class="dash-mock-date">
+                  <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect x="3" y="4" width="18" height="18" rx="2"/><line x1="16" y1="2" x2="16" y2="6"/><line x1="8" y1="2" x2="8" y2="6"/><line x1="3" y1="10" x2="21" y2="10"/></svg>
+                  Ago 2026
+                </span>
+                <span class="dash-mock-currency">
+                  <span class="dash-mock-currency-off">$</span>
+                  <span class="dash-mock-currency-on">₡</span>
+                </span>
+              </div>
+              <div class="rep-mock-stats">
+                <div class="rep-mock-stat">
+                  <span class="rep-mock-stat-label">Gastos totales</span>
+                  <span class="rep-mock-stat-value">₡312,960</span>
+                  <span class="rep-mock-stat-delta">↘ -79% vs mes anterior</span>
+                </div>
+                <div class="rep-mock-stat">
+                  <span class="rep-mock-stat-label">Ingresos totales</span>
+                  <span class="rep-mock-stat-value">₡0</span>
+                  <span class="rep-mock-stat-delta">↘ -100% vs mes anterior</span>
+                </div>
+              </div>
+              <div class="rep-mock-chart-card">
+                <div class="rep-mock-chart-head">
+                  <span class="rep-mock-chart-title">Gastos del mes</span>
+                  <div class="rep-mock-legend">
+                    <span><i class="is-current"></i>Este mes</span>
+                    <span><i></i>Mes anterior</span>
+                  </div>
+                </div>
+                <div class="rep-mock-bars">
+                  <div class="rep-mock-bar-col">
+                    <span class="rep-mock-bar is-current" style="height: 45%;"></span>
+                    <span class="rep-mock-bar-label">Sem 1</span>
+                  </div>
+                  <div class="rep-mock-bar-col">
+                    <span class="rep-mock-bar is-current" style="height: 20%;"></span>
+                    <span class="rep-mock-bar-label">Sem 2</span>
+                  </div>
+                  <div class="rep-mock-bar-col">
+                    <span class="rep-mock-bar" style="height: 85%;"></span>
+                    <span class="rep-mock-bar-label">Sem 3</span>
+                  </div>
+                  <div class="rep-mock-bar-col">
+                    <span class="rep-mock-bar" style="height: 65%;"></span>
+                    <span class="rep-mock-bar-label">Sem 4</span>
+                  </div>
+                </div>
+                <p class="rep-mock-avg">Promedio diario: <strong>₡31,296</strong></p>
+              </div>
+            </div>
+          </div>
+        </article>
+
+        <article class="how-step-card">
+          <div class="how-feature-icon" aria-hidden="true">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><polyline points="23 4 23 10 17 10"/><polyline points="1 20 1 14 7 14"/><path d="M3.51 9a9 9 0 0114.85-3.36L23 10M1 14l4.64 4.36A9 9 0 0020.49 15"/></svg>
+          </div>
+          <div class="how-step-copy">
+            <h3>Cobros recurrentes bajo control</h3>
+            <p>Zaldo detecta tus suscripciones y pagos fijos, y te avisa antes de que lleguen.</p>
+          </div>
+          <div class="how-feature-visual how-feature-visual--recurrentes-mock" aria-hidden="true">
+            <div class="recur-mock">
+              <div class="dash-mock-top">
+                <span class="dash-mock-title">Recurrentes</span>
+                <div class="dash-mock-icons">
+                  <span class="dash-mock-icon-btn">
+                    <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M18 8a6 6 0 10-12 0c0 7-3 9-3 9h18s-3-2-3-9"/><path d="M13.73 21a2 2 0 01-3.46 0"/></svg>
+                  </span>
+                  <span class="dash-mock-icon-btn">
+                    <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="3"/><path d="M19.4 15a1.65 1.65 0 00.33 1.82l.06.06a2 2 0 11-2.83 2.83l-.06-.06a1.65 1.65 0 00-1.82-.33 1.65 1.65 0 00-1 1.51V21a2 2 0 11-4 0v-.09A1.65 1.65 0 009 19.4a1.65 1.65 0 00-1.82.33l-.06.06a2 2 0 11-2.83-2.83l.06-.06a1.65 1.65 0 00.33-1.82 1.65 1.65 0 00-1.51-1H3a2 2 0 110-4h.09A1.65 1.65 0 004.6 9a1.65 1.65 0 00-.33-1.82l-.06-.06a2 2 0 112.83-2.83l.06.06a1.65 1.65 0 001.82.33H9a1.65 1.65 0 001-1.51V3a2 2 0 114 0v.09a1.65 1.65 0 001 1.51 1.65 1.65 0 001.82-.33l.06-.06a2 2 0 112.83 2.83l-.06.06a1.65 1.65 0 00-.33 1.82V9a1.65 1.65 0 001.51 1H21a2 2 0 110 4h-.09a1.65 1.65 0 00-1.51 1z"/></svg>
+                  </span>
+                  <span class="dash-mock-add">
+                    <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><line x1="12" y1="5" x2="12" y2="19"/><line x1="5" y1="12" x2="19" y2="12"/></svg>
+                  </span>
+                </div>
+              </div>
+              <p class="recur-mock-intro">Automatizá gastos e ingresos que se repiten con una frecuencia fija.</p>
+              <div class="recur-mock-list">
+                <div class="recur-item">
+                  <div class="recur-item-top">
+                    <span class="recur-item-name">CCSS</span>
+                    <span class="recur-item-status">Activa</span>
+                  </div>
+                  <p class="recur-item-details"><strong>₡98,000</strong> · Mensual · Próxima: 03 sept 2026</p>
+                  <span class="recur-item-method">Transferencia bancaria</span>
+                  <span class="recur-item-tag recur-item-tag--red">Seguros</span>
+                </div>
+                <div class="recur-item">
+                  <div class="recur-item-top">
+                    <span class="recur-item-name">Bernal Contador</span>
+                    <span class="recur-item-status">Activa</span>
+                  </div>
+                  <p class="recur-item-details"><strong>₡25,000</strong> · Mensual · Próxima: 13 ago 2026</p>
+                  <span class="recur-item-method">Transferencia bancaria</span>
+                  <span class="recur-item-tag recur-item-tag--blue">Gastos Diversos</span>
+                </div>
+              </div>
+            </div>
           </div>
         </article>
       </div>
-      <div class="how-cta">
-        <a href="waiting-list/" class="btn btn--primary">
-          <span>Unirme a la lista de espera</span>
+    </div>
+  </section>
+
+  <section class="cta-mid">
+    <div class="cta-mid-inner">
+      <h2>Toda tu plata, clara de un solo vistazo</h2>
+      <p>Dejá de adivinar a fin de mes. Probá Zaldo gratis por 14 días.</p>
+      <div class="cta-group">
+        <a href="https://app.mizaldo.com/" class="btn btn--dark">
+          <span>Probar gratis 14 días</span>
           <span class="btn-icon">
             <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M5 12h14M13 6l6 6-6 6"/></svg>
           </span>
         </a>
-      </div>
-    </div>
-  </section>
-
-  <section id="features" class="features">
-    <div class="features-inner">
-      <header class="features-header">
-        <p class="section-eyebrow">Todo en un solo lugar</p>
-        <h2>Funciones hechas <br> para que de verdad uses</h2>
-        <p>Desde categorías inteligentes hasta reportes claros. Lo que necesitás para tomar control, sin cosas de más.</p>
-      </header>
-
-      <div class="features-bento">
-        <article class="features-bento-card features-bento-card--wide">
-          <div class="features-bento-copy">
-            <h3>Complemento de Google</h3>
-            <p>Olvidate de meter cada compra a mano. Los correos de tu banco se convierten en transacciones ordenadas y categorizadas, automáticamente. Vos solo revisás.</p>
-          </div>
-          <div class="features-bento-visual features-bento-visual--dashboard">
-            <img src="assets/features/zaldo-dashboard.png" alt="Dashboard de Zaldo con gastos, ingresos y transacciones del mes" width="3376" height="860" loading="lazy">
-          </div>
-        </article>
-
-        <article class="features-bento-card features-bento-card--narrow">
-          <div class="features-bento-copy">
-            <h3>Categorías a tu manera</h3>
-            <p>Organizá tus gastos en categorías y subcategorías que tengan sentido para vos. Comida, transporte, suscripciones, lo que sea.</p>
-          </div>
-          <div class="features-bento-visual features-bento-visual--categories">
-            <img src="assets/features/cat-ez.png" alt="Pantalla de categorías en Zaldo" width="1937" height="2261" loading="lazy">
-          </div>
-        </article>
-
-        <article class="features-bento-card features-bento-card--narrow">
-          <div class="features-bento-copy">
-            <h3>Límites de gasto</h3>
-            <p>Poné un techo mensual, general o por categoría, y Zaldo te avisa antes de que se te pase la mano.</p>
-          </div>
-          <div class="features-bento-visual" aria-hidden="true">
-            <div class="feat-limit-mock">
-              <div class="feat-limit-card">
-                <div class="feat-limit-head">
-                  <span>Límite mensual</span>
-                  <span class="feat-limit-warn">78%</span>
-                </div>
-                <p class="feat-limit-amount">₡351,000 <span>de ₡450,000</span></p>
-                <div class="feat-limit-bar">
-                  <div class="feat-limit-fill" style="--pct: 78%"></div>
-                </div>
-                <p class="feat-limit-note">Te quedan ₡99,000 este mes</p>
-              </div>
-              <div class="feat-limit-alert">
-                <span class="feat-limit-alert-icon">!</span>
-                <span>Cerca del límite en Comida</span>
-              </div>
-            </div>
-          </div>
-        </article>
-
-        <article class="features-bento-card features-bento-card--wide">
-          <div class="features-bento-copy">
-            <h3>Reglas inteligentes</h3>
-            <p>Enseñale a Zaldo una vez: &quot;todo lo del Automercado es Súper&quot; y lo aplica solo de ahí en adelante.</p>
-          </div>
-          <div class="features-bento-visual" aria-hidden="true">
-            <div class="feat-rules-mock">
-              <div class="feat-rule-card feat-rule-card--back">
-                <span class="feat-rule-if">Si comercio contiene</span>
-                <span class="feat-rule-val">&quot;Uber&quot;</span>
-                <span class="feat-rule-then">→ Transporte</span>
-              </div>
-              <div class="feat-rule-card feat-rule-card--front">
-                <div class="feat-rule-head">
-                  <span class="feat-rule-if">Si comercio contiene</span>
-                  <span class="feat-rule-status">Activa</span>
-                </div>
-                <span class="feat-rule-val">&quot;Automercado&quot;</span>
-                <span class="feat-rule-then">→ Supermercado</span>
-                <div class="feat-rule-applied">
-                  <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><path d="M20 6L9 17l-5-5"/></svg>
-                  Aplicada a 12 transacciones
-                </div>
-              </div>
-            </div>
-          </div>
-        </article>
-      </div>
-
-      <div class="features-deferred" hidden>
-        <article class="need-card" tabindex="0">
-          <div class="need-card-body">
-            <div class="need-icon" aria-hidden="true">
-              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M17 9V7a2 2 0 00-2-2H5a2 2 0 00-2 2v6a2 2 0 002 2h2m2 4h10a2 2 0 002-2v-6a2 2 0 00-2-2H9a2 2 0 00-2 2v6a2 2 0 002 2zm7-5a2 2 0 11-4 0 2 2 0 014 0z"/></svg>
-            </div>
-            <h3>Colones y dólares</h3>
-            <p>Cambiá entre CRC y USD cuando querás. Zaldo convierte todo al toque con el tipo de cambio del día.</p>
-          </div>
-        </article>
-        <article class="need-card" tabindex="0">
-          <div class="need-card-body">
-            <div class="need-icon" aria-hidden="true">
-              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M12 5v14M5 12h14"/></svg>
-            </div>
-            <h3>Gastos manuales</h3>
-            <p>¿Pagaste algo en efectivo o por SINPE? Agregalo en segundos. No todo pasa por tarjeta y Zaldo lo sabe.</p>
-          </div>
-        </article>
-        <article class="need-card" tabindex="0">
-          <div class="need-card-body">
-            <div class="need-icon" aria-hidden="true">
-              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z"/><path d="M13 8l-3 5h4l-3 5"/></svg>
-            </div>
-            <h3>Tu plata, privada</h3>
-            <p>Tus datos son tuyos. Zaldo solo lee las notificaciones de tu banco y nunca comparte tu información.</p>
-          </div>
-        </article>
-      </div>
-    </div>
-  </section>
-
-  <section class="savings">
-    <div class="savings-inner">
-      <div class="savings-chart-wrap">
-        <div class="savings-chart-card">
-          <h3>Progreso del mes</h3>
-          <div class="savings-gauge" id="savingsGauge">
-            <svg viewBox="0 0 220 130" fill="none" aria-hidden="true">
-              <path class="gauge-track gauge-track--rate" d="M 22 105 A 88 88 0 0 1 198 105"/>
-              <path class="gauge-track gauge-track--efficiency" d="M 38 105 A 72 72 0 0 1 182 105"/>
-              <path class="gauge-track gauge-track--engagement" d="M 54 105 A 56 56 0 0 1 166 105"/>
-              <path class="gauge-fill gauge-fill--rate" data-length="276" data-pct="100" d="M 22 105 A 88 88 0 0 1 198 105"/>
-              <path class="gauge-fill gauge-fill--efficiency" data-length="226" data-pct="45" d="M 38 105 A 72 72 0 0 1 182 105"/>
-              <path class="gauge-fill gauge-fill--engagement" data-length="176" data-pct="65" d="M 54 105 A 56 56 0 0 1 166 105"/>
-            </svg>
-            <div class="savings-gauge-center">
-              <div class="savings-gauge-amount">₡312,450</div>
-              <div class="savings-gauge-label">Gasto del mes</div>
-            </div>
-          </div>
-          <dl class="savings-legend">
-            <div class="savings-legend-item">
-              <div class="savings-legend-bar savings-legend-bar--rate"></div>
-              <dt>Límite</dt>
-              <dd>100%</dd>
-            </div>
-            <div class="savings-legend-item">
-              <div class="savings-legend-bar savings-legend-bar--efficiency"></div>
-              <dt>Comida</dt>
-              <dd>45%</dd>
-            </div>
-            <div class="savings-legend-item">
-              <div class="savings-legend-bar savings-legend-bar--engagement"></div>
-              <dt>Transporte</dt>
-              <dd>65%</dd>
-            </div>
-          </dl>
-        </div>
-      </div>
-
-      <div class="savings-copy">
-        <h2>Toda tu plata, clara de un solo vistazo</h2>
-        <p>Abrís Zaldo y en segundos sabés cómo venís: cuánto llevás gastado este mes, en qué categorías, y si vas bien o te estás pasando. Sin cuentas, sin Excel, sin sorpresas a fin de mes.</p>
-        <ul class="savings-steps">
-          <li class="savings-step">
-            <span class="savings-step-accent savings-step-accent--rate"></span>
-            Tu balance del mes, siempre actualizado
-          </li>
-          <li class="savings-step">
-            <span class="savings-step-accent savings-step-accent--efficiency"></span>
-            Tus gastos agrupados por categoría
-          </li>
-          <li class="savings-step">
-            <span class="savings-step-accent savings-step-accent--engagement"></span>
-            Comparación con meses anteriores (Pro)
-          </li>
-          <li class="savings-step">
-            <span class="savings-step-accent savings-step-accent--rate"></span>
-            Alertas cuando te acercás a tus límites
-          </li>
-        </ul>
       </div>
     </div>
   </section>
@@ -542,7 +594,7 @@
               <span class="pricing-amount">0</span>
               <span class="pricing-period">/ para siempre</span>
             </div>
-            <a href="waiting-list/" class="pricing-cta pricing-cta--outline">Unirme a la lista de espera</a>
+            <a href="https://app.mizaldo.com/" class="pricing-cta pricing-cta--outline">Empezar gratis</a>
           </div>
           <div class="pricing-card-features">
             <ul class="pricing-features">
@@ -565,7 +617,7 @@
               <span class="pricing-period" id="pricingPeriod">/ mes</span>
             </div>
             <p class="pricing-billed" id="pricingBilled" hidden>Facturado anualmente a $35.88</p>
-            <a href="waiting-list/" class="pricing-cta pricing-cta--solid">Unirme a la lista de espera</a>
+            <a href="https://app.mizaldo.com/" class="pricing-cta pricing-cta--solid">Probar gratis 14 días</a>
           </div>
           <div class="pricing-card-features">
             <ul class="pricing-features">
@@ -577,7 +629,7 @@
               <li>Reportes de todos los meses (historial completo)</li>
               <li>Soporte prioritario</li>
             </ul>
-            <p class="pricing-microcopy">Gratis por 7 días. Cancelá cuando querás, sin enredos.</p>
+            <p class="pricing-microcopy">Gratis por 14 días. Cancelá cuando querás, sin enredos.</p>
           </div>
         </article>
       </div>
@@ -662,10 +714,10 @@
     <section class="cta-final" id="cta-final">
       <div class="cta-final-inner">
         <h2>Tomá el control de tu plata hoy</h2>
-        <p>Empezá gratis en menos de un minuto. Sin tarjeta, sin compromiso.<br>Date cuenta de a dónde se va tu dinero.</p>
+        <p>Probá 14 días gratis. Sin tarjeta, sin compromiso.<br>Date cuenta de a dónde se va tu dinero.</p>
         <div class="cta-group">
-          <a href="waiting-list/" class="btn btn--dark">
-            <span>Unirme a la lista de espera</span>
+          <a href="https://app.mizaldo.com/" class="btn btn--dark">
+            <span>Probar gratis 14 días</span>
           </a>
         </div>
       </div>
@@ -684,7 +736,6 @@
             <div class="site-footer-col">
               <h3>Producto</h3>
               <ul>
-                <li><a href="#features">Funciones</a></li>
                 <li><a href="#pricing">Precios</a></li>
                 <li><a href="#how-it-works">Cómo funciona</a></li>
               </ul>
@@ -692,7 +743,7 @@
             <div class="site-footer-col">
               <h3>Cuenta</h3>
               <ul>
-                <li><a href="waiting-list/">Unirme a la lista de espera</a></li>
+                <li><a href="https://app.mizaldo.com/">Empezar gratis</a></li>
               </ul>
             </div>
             <div class="site-footer-col">

@@ -37,7 +37,7 @@ You may revoke Zaldo's access to your Gmail at any time through your Google Acco
 Zaldo offers a free plan and a paid "Pro" plan. The features and limits of each plan are described within the Service and may change over time. We will make reasonable efforts to communicate material changes.
 
 ### 4.2 Free trial
-The Pro plan may be offered with a free trial period (for example, 7 days). If you do not cancel before the trial ends, you will be charged for the plan you selected at the price shown at checkout. You may cancel at any time before the trial ends to avoid being charged.
+The Pro plan may be offered with a free trial period (for example, 14 days). If you do not cancel before the trial ends, you will be charged for the plan you selected at the price shown at checkout. You may cancel at any time before the trial ends to avoid being charged.
 
 ### 4.3 Billing
 Paid subscriptions are billed in advance on a recurring basis (monthly or annually, depending on the plan you choose) through our payment processor, Stripe. By subscribing, you authorize us (via Stripe) to charge your payment method on a recurring basis until you cancel.
