@@ -79,6 +79,7 @@
         <nav aria-label="Principal">
           <ul class="nav-links">
             <li><a href="#how-it-works">Cómo funciona</a></li>
+            <li><a href="#app-tour">Features</a></li>
             <li><a href="#pricing">Precio</a></li>
           </ul>
         </nav>
@@ -91,6 +92,7 @@
     </header>
 
     <div class="hero-content">
+      <p class="hero-eyebrow">Exclusivo para Costa Rica</p>
       <h1 class="headline">
         <span class="headline-line headline-line--desktop">Zaldo te ayuda a organizar tus gastos</span>
         <span class="headline-line headline-line--desktop">y entender adonde va tu dinero</span>
@@ -167,22 +169,15 @@
     </div>
   </section>
 
-  <section id="how-it-works" class="needs how-it-works">
+  <section id="how-it-works" class="needs how-process">
     <div class="needs-inner">
       <header class="needs-header">
         <p class="section-eyebrow">Así de fácil</p>
         <h2>De un correo del banco <br> a tu control de gastos.</h2>
-        <p>Cada vez que comprás, tu banco te manda un correo. Zaldo lo lee por vos, lo organiza y te lo muestra donde ya lo necesitás: en tu dashboard, tus categorías y tus reportes.</p>
+        <p>Cada vez que comprás, tu banco te manda un correo. Zaldo lo lee por vos y lo convierte en una transacción ordenada y categorizada. Vos no hacés nada.</p>
       </header>
       <div class="needs-grid how-grid">
         <article class="how-step-card">
-          <div class="how-feature-icon" aria-hidden="true">
-            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"/><polyline points="22,6 12,13 2,6"/></svg>
-          </div>
-          <div class="how-step-copy">
-            <h3>Conectás tu Gmail en un toque</h3>
-            <p>Autorizás el complemento de Google y Zaldo empieza a leer los correos de tu banco. Nada de contraseñas.</p>
-          </div>
           <div class="how-step-visual" aria-hidden="true">
             <div class="how-step-scene">
               <div class="how-auth-mock">
@@ -215,6 +210,186 @@
                       <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"><path d="M5 12l5 5L20 7"/></svg>
                     </span>
                   </span>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="how-step-copy">
+            <h3>Conectás Zaldo a tu Gmail</h3>
+            <p>Instalás el complemento en un toque. Zaldo solo lee los correos de notificación de tu banco, nada más.</p>
+          </div>
+        </article>
+
+        <article class="how-step-card">
+          <div class="how-step-visual" aria-hidden="true">
+            <div class="how-step-scene">
+              <div class="how-mail-mock">
+                <div class="how-mail-window">
+                  <header class="how-mail-chrome">
+                    <span class="how-mail-chrome-title">Compra con tu tarjeta</span>
+                    <div class="how-mail-chrome-actions">
+                      <span></span><span></span><span></span>
+                    </div>
+                  </header>
+                  <div class="how-mail-fields">
+                    <div class="how-mail-field">
+                      <span class="how-mail-field-label">De</span>
+                      <span class="how-mail-field-value">BAC Credomatic</span>
+                    </div>
+                    <div class="how-mail-field">
+                      <span class="how-mail-field-label">Para</span>
+                      <span class="how-mail-field-value">juan.perez@gmail.com</span>
+                    </div>
+                    <div class="how-mail-field how-mail-field--subject">
+                      <span class="how-mail-field-label">Asunto</span>
+                      <span class="how-mail-field-value">Compra aprobada — VISA ****0940</span>
+                    </div>
+                  </div>
+                  <div class="how-mail-body">
+                    <p class="how-mail-greeting">Hola, Juan Perez <span aria-hidden="true">👋</span></p>
+                    <dl class="how-mail-receipt">
+                      <div class="how-mail-receipt-row">
+                        <dt>Comercio</dt>
+                        <dd>Joe's Pizzeria</dd>
+                      </div>
+                      <div class="how-mail-receipt-row">
+                        <dt>Fecha</dt>
+                        <dd>Abr 4, 2026, 22:26</dd>
+                      </div>
+                      <div class="how-mail-receipt-row">
+                        <dt>VISA</dt>
+                        <dd>**** **** 0940</dd>
+                      </div>
+                      <div class="how-mail-receipt-row">
+                        <dt>Tipo</dt>
+                        <dd>COMPRA</dd>
+                      </div>
+                    </dl>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="how-step-copy">
+            <h3>Llega un correo de tu banco</h3>
+            <p>Comprás algo con tu tarjeta BAC o Promerica. El banco te manda la notificación de siempre.</p>
+          </div>
+        </article>
+
+        <article class="how-step-card">
+          <div class="how-step-visual" aria-hidden="true">
+            <div class="how-step-scene">
+              <div class="how-mail-mock how-mail-mock--addon">
+                <div class="how-mail-window how-mail-window--addon">
+                  <aside class="how-addon-sidebar">
+                    <img class="how-addon-logo" src="assets/card-1/zaldo-icon.svg" alt="" width="24" height="21" decoding="async" loading="lazy">
+                    <span class="how-addon-btn">
+                      <span class="how-addon-btn-label">Guardar</span>
+                      <span class="how-addon-btn-saved">
+                        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="3" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M5 12l5 5L20 7"/></svg>
+                        Guardado
+                      </span>
+                    </span>
+                  </aside>
+                  <header class="how-mail-chrome">
+                    <span class="how-mail-chrome-title">Compra con tu tarjeta</span>
+                    <div class="how-mail-chrome-actions">
+                      <span></span><span></span><span></span>
+                    </div>
+                  </header>
+                  <div class="how-mail-fields">
+                    <div class="how-mail-field">
+                      <span class="how-mail-field-label">De</span>
+                      <span class="how-mail-field-value">BAC Credomatic</span>
+                    </div>
+                    <div class="how-mail-field">
+                      <span class="how-mail-field-label">Para</span>
+                      <span class="how-mail-field-value">juan.perez@gmail.com</span>
+                    </div>
+                    <div class="how-mail-field how-mail-field--subject">
+                      <span class="how-mail-field-label">Asunto</span>
+                      <span class="how-mail-field-value">Compra aprobada — VISA ****0940</span>
+                    </div>
+                  </div>
+                  <div class="how-mail-body how-mail-body--placeholder">
+                    <div class="how-mail-placeholder">
+                      <span></span>
+                      <span></span>
+                      <span></span>
+                      <span></span>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="how-step-copy">
+            <h3>Guardás desde Gmail con el Addon y llega a tu dashboard</h3>
+            <p>Zaldo detecta el monto, el comercio y la categoría. Lo ves en tu dashboard sin haber tipeado una sola tecla.</p>
+          </div>
+        </article>
+      </div>
+    </div>
+  </section>
+
+  <section id="app-tour" class="needs app-tour">
+    <div class="needs-inner">
+      <header class="needs-header">
+        <p class="section-eyebrow">La app</p>
+        <h2>Todo lo que necesitás, <br> en un solo lugar.</h2>
+        <p>Dashboard, transacciones, categorías, reportes y cobros recurrentes. Todo ordenado automáticamente, listo para revisar cuando quieras.</p>
+      </header>
+      <div class="needs-grid how-grid">
+        <article class="how-step-card">
+          <div class="how-feature-icon" aria-hidden="true">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"/><polyline points="22,6 12,13 2,6"/></svg>
+          </div>
+          <div class="how-step-copy">
+            <h3>El add-on, directo en Gmail</h3>
+            <p>Guardá una compra desde tu bandeja de entrada con un clic. Zaldo la categoriza al instante.</p>
+          </div>
+          <div class="how-step-visual" aria-hidden="true">
+            <div class="how-step-scene">
+              <div class="how-mail-mock how-mail-mock--addon">
+                <div class="how-mail-window how-mail-window--addon">
+                  <aside class="how-addon-sidebar">
+                    <img class="how-addon-logo" src="assets/card-1/zaldo-icon.svg" alt="" width="24" height="21" decoding="async" loading="lazy">
+                    <span class="how-addon-btn">
+                      <span class="how-addon-btn-label">Guardar</span>
+                      <span class="how-addon-btn-saved">
+                        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="3" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M5 12l5 5L20 7"/></svg>
+                        Guardado
+                      </span>
+                    </span>
+                  </aside>
+                  <header class="how-mail-chrome">
+                    <span class="how-mail-chrome-title">Compra con tu tarjeta</span>
+                    <div class="how-mail-chrome-actions">
+                      <span></span><span></span><span></span>
+                    </div>
+                  </header>
+                  <div class="how-mail-fields">
+                    <div class="how-mail-field">
+                      <span class="how-mail-field-label">De</span>
+                      <span class="how-mail-field-value">BAC Credomatic</span>
+                    </div>
+                    <div class="how-mail-field">
+                      <span class="how-mail-field-label">Para</span>
+                      <span class="how-mail-field-value">juan.perez@gmail.com</span>
+                    </div>
+                    <div class="how-mail-field how-mail-field--subject">
+                      <span class="how-mail-field-label">Asunto</span>
+                      <span class="how-mail-field-value">Compra aprobada — VISA ****0940</span>
+                    </div>
+                  </div>
+                  <div class="how-mail-body how-mail-body--placeholder">
+                    <div class="how-mail-placeholder">
+                      <span></span>
+                      <span></span>
+                      <span></span>
+                      <span></span>
+                    </div>
+                  </div>
                 </div>
               </div>
             </div>
@@ -731,6 +906,13 @@
               <img src="assets/zaldo-logo-v1.svg" alt="Zaldo" class="logo-img" width="511" height="195" decoding="async" loading="lazy">
             </a>
             <p class="site-footer-tagline">Convertí los correos de tu banco en un control de gastos automático.</p>
+            <div class="site-footer-stores">
+              <span class="site-footer-stores-label">Muy pronto</span>
+              <div class="site-footer-stores-badges">
+                <img src="assets/AppStore.svg" alt="Próximamente en App Store" width="165" height="55" decoding="async" loading="lazy">
+                <img src="assets/google-play.svg" alt="Próximamente en Google Play" width="195" height="60" decoding="async" loading="lazy">
+              </div>
+            </div>
           </div>
           <div class="site-footer-columns">
             <div class="site-footer-col">

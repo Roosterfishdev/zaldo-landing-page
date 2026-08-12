@@ -370,6 +370,15 @@ body.nav-open {
   display: none;
 }
 
+.hero-eyebrow {
+  font-size: 0.8125rem;
+  font-weight: 600;
+  letter-spacing: 0.12em;
+  text-transform: uppercase;
+  color: var(--teal);
+  margin-bottom: 0.875rem;
+}
+
 .headline {
   font-size: clamp(2.25rem, 5.5vw, 3.75rem);
   font-weight: 700;
@@ -1151,7 +1160,7 @@ html.js-animations .hero-showcase.is-visible .hero-float--right {
   .hero--light .headline {
     align-items: flex-start;
     text-align: left;
-    font-size: clamp(1.375rem, 6.4vw, 1.75rem);
+    font-size: 1.75rem;
     font-weight: 600;
     margin-top: 0.75rem;
     margin-bottom: 1rem;
@@ -1187,6 +1196,10 @@ html.js-animations .hero-showcase.is-visible .hero-float--right {
     gap: 0.875rem;
   }
 
+  .hero .cta-group--solo {
+    width: 100%;
+  }
+
   .hero .cta-group .btn {
     width: auto;
     min-width: 0;
@@ -1194,6 +1207,11 @@ html.js-animations .hero-showcase.is-visible .hero-float--right {
     font-size: 0.875rem;
     font-weight: 500;
     padding: 0.8125rem 1.625rem;
+  }
+
+  .hero .cta-group--solo .btn {
+    width: 100%;
+    justify-content: center;
   }
 
   .hero .cta-group .btn:has(.btn-icon) {
@@ -1278,6 +1296,10 @@ html.js-animations .hero-showcase.is-visible .hero-float--right {
   .hero--light + .needs {
     padding-top: 3.5rem;
   }
+
+  .needs-header h2 {
+    font-size: 1.5rem;
+  }
 }
 
 @media (max-width: 520px) {
@@ -1287,6 +1309,14 @@ html.js-animations .hero-showcase.is-visible .hero-float--right {
 }
 
 @media (max-width: 360px) {
+  .hero--light .headline {
+    font-size: 1.5rem;
+  }
+
+  .hero--light .headline-line--mobile {
+    white-space: normal;
+  }
+
   .hero .cta-group {
     gap: 0.625rem;
   }
@@ -3381,12 +3411,12 @@ html.js-animations .hero-showcase.is-visible .hero-float--right {
   margin: 2rem auto 0;
 }
 
-/* ── How it works (feature grid) ── */
-.how-it-works {
+/* ── App tour (feature grid) ── */
+.app-tour {
   padding-bottom: 3rem;
 }
 
-.how-it-works .needs-header {
+.app-tour .needs-header {
   max-width: 640px;
 }
 
@@ -4924,6 +4954,33 @@ html.js-animations .hero-showcase.is-visible .hero-float--right {
   line-height: 1.6;
   margin-bottom: 0;
   max-width: 30ch;
+}
+
+.site-footer-stores {
+  margin-top: 1.25rem;
+  display: flex;
+  flex-direction: column;
+  gap: 0.625rem;
+}
+
+.site-footer-stores-label {
+  font-size: 0.75rem;
+  font-weight: 600;
+  color: var(--text-body);
+  text-transform: uppercase;
+  letter-spacing: 0.04em;
+}
+
+.site-footer-stores-badges {
+  display: flex;
+  align-items: center;
+  gap: 0.75rem;
+  flex-wrap: wrap;
+}
+
+.site-footer-stores-badges img {
+  height: 2.25rem;
+  width: auto;
 }
 
 .site-footer-card .site-footer-columns {
