@@ -1,4 +1,5 @@
 (function () {
+  function boot() {
   var prefersReducedMotion = window.matchMedia('(prefers-reduced-motion: reduce)').matches;
   document.documentElement.classList.add('js-animations');
 
@@ -358,4 +359,11 @@
     document.head.appendChild(script);
   })();
 
+  }
+
+  if (document.readyState === 'loading') {
+    document.addEventListener('DOMContentLoaded', boot);
+  } else {
+    boot();
+  }
 })();
