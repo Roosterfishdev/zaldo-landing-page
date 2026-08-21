@@ -2,5 +2,6 @@ User-agent: *
 Allow: /
 
 Disallow: /404.html
+Disallow: /docs/
 
 Sitemap: https://mizaldo.com/sitemap.xml

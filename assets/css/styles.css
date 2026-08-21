@@ -1,13 +1,5 @@
 @font-face {
   font-family: 'Aeonik Pro';
-  src: url('../aeonik-pro/aeonik-thin.woff') format('woff');
-  font-weight: 100;
-  font-style: normal;
-  font-display: swap;
-}
-
-@font-face {
-  font-family: 'Aeonik Pro';
   src: url('../aeonik-pro/aeonik-light.woff') format('woff');
   font-weight: 300;
   font-style: normal;
@@ -42,14 +34,6 @@
   font-family: 'Aeonik Pro';
   src: url('../aeonik-pro/aeonik-bold.woff') format('woff');
   font-weight: 700;
-  font-style: normal;
-  font-display: swap;
-}
-
-@font-face {
-  font-family: 'Aeonik Pro';
-  src: url('../aeonik-pro/aeonik-bold.woff') format('woff');
-  font-weight: 800;
   font-style: normal;
   font-display: swap;
 }
