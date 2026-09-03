@@ -1,6 +1,6 @@
 # Privacy Policy — Zaldo
 
-**Last updated: June 25, 2026**
+**Last updated: September 3, 2026**
 
 This Privacy Policy describes how Jaguar Hosting LLC ("Jaguar Hosting," "we," "us," or "our") collects, uses, stores, and protects your information when you use Zaldo (the "Service"), including the Zaldo web dashboard, the Zaldo Google Workspace (Gmail) add-on, and any related applications or services.
 
@@ -37,7 +37,7 @@ If you choose to install and authorize the Zaldo Gmail add-on, Zaldo accesses **
 - Zaldo does **not** access your Google account password and does **not** access your online banking.
 
 ### 2.3 Information collected automatically
-- **Usage and analytics data:** we use privacy-focused analytics to understand how the Service is used (for example, pages visited and features used). 
+- **Usage and analytics data:** we use privacy-focused analytics to understand how the Service is used (for example, pages visited and features used). We also use advertising and measurement tools, including the Meta (Facebook) pixel and Meta's Conversions API, to measure the effectiveness of our advertising and understand how users find and sign up for Zaldo. Through these tools we may share limited event data with Meta (such as when an account is created or a purchase is completed), including a hashed (irreversible) version of your email address used solely for measurement and attribution. We do **not** share your financial transaction details or the contents of your emails with advertising providers.
 - **Technical data:** basic technical information such as browser type and approximate region, used to operate and secure the Service.
 
 ---
@@ -50,7 +50,7 @@ Specifically:
 
 - **Limited purpose:** Information obtained from Gmail through Google Workspace APIs is used **solely** to provide and improve Zaldo's expense-tracking features that you have requested — namely, detecting and recording a transaction from a bank notification email you open.
 - **No permanent copies of email:** Zaldo does **not** create permanent copies of your email messages, does **not** build databases of your email, and does **not** retain cached copies of your email beyond what is necessary to perform the requested action.
-- **No human access:** We do **not** allow humans to read your Gmail data, except (a) with your explicit consent for specific messages, (b) where necessary for security purposes (such as investigating abuse), (c) to comply with applicable law, or (d) where the data has been aggregated and anonymized. 
+- **No human access:** We do **not** allow humans to read your Gmail data, except (a) with your explicit consent for specific messages, (b) where necessary for security purposes (such as investigating abuse), (c) to comply with applicable law, or (d) where the data has been aggregated and anonymized.
 - **No advertising:** We do **not** use Gmail data for advertising purposes.
 - **No model training:** We do **not** use your Gmail data, or any Google user data, to train, develop, or improve generalized or non-personalized artificial intelligence or machine learning models.
 - **No sale or transfer:** We do **not** sell Google user data and do **not** transfer it to third parties except as necessary to provide the Service, for security purposes, or to comply with applicable law.
@@ -82,6 +82,7 @@ We do **not** sell your personal information. We share information only with ser
 - **Stripe** — our payment processor, which handles subscriptions and payment data. Stripe's handling of your data is governed by [Stripe's Privacy Policy](https://stripe.com/privacy).
 - **Resend** — our email delivery provider, used to send transactional emails such as login links.
 - **Hosting and analytics providers** — used to host the Service and understand usage in a privacy-focused manner.
+- **Meta (Facebook)** — for advertising measurement and attribution, via the Meta pixel and Conversions API. We share only limited conversion event data and a hashed version of your email for measurement purposes, as described in Section 2.3. We do **not** share your transaction data or email contents with Meta.
 
 We may also disclose information if required by law, regulation, legal process, or governmental request, or to protect the rights, property, or safety of Jaguar Hosting, our users, or others.
 
@@ -117,7 +118,7 @@ To exercise any of these rights, contact us at **support@mizaldo.com**. We will 
 
 If you are in the European Economic Area, the United Kingdom, or a jurisdiction with similar laws, you also have the right to lodge a complaint with your local data protection authority.
 
-For users in California and other U.S. states with applicable privacy laws: we do not sell or share your personal information for cross-context behavioral advertising, and we do not use sensitive personal information for purposes other than providing the Service.
+For users in California and other U.S. states with applicable privacy laws: we do not sell your personal information for money. We use advertising and measurement tools (such as the Meta pixel and Conversions API, described in Section 2.3) that may involve sharing limited event data, including a hashed identifier, with advertising partners for measuring and improving our advertising; depending on your jurisdiction, this may be considered "sharing" for cross-context behavioral advertising. We do not use your sensitive personal information (such as your financial transaction details or email contents) for advertising purposes. If you would like to opt out of this sharing, contact us at **support@mizaldo.com**.
 
 ---
 

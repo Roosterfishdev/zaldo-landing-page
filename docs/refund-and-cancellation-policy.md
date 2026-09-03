@@ -1,8 +1,8 @@
 # Refund & Cancellation Policy — Zaldo
 
-**Last updated: June 25, 2026**
+**Last updated: September 3, 2026**
 
-This Refund & Cancellation Policy explains how subscriptions, cancellations, and refunds work for Zaldo, operated by Jaguar Hosting LLC ("we," "us," or "our"). It forms part of our [Terms of Service](#).
+This Refund & Cancellation Policy explains how subscriptions, cancellations, and refunds work for Zaldo, operated by Jaguar Hosting LLC ("we," "us," or "our"). It forms part of our [Terms of Service](../terms-of-service.html).
 
 We aim to be fair and transparent. If you ever have a problem with a charge, contact us at **support@mizaldo.com** and we will work with you in good faith.
 
@@ -10,13 +10,13 @@ We aim to be fair and transparent. If you ever have a problem with a charge, con
 
 ## 1. Subscriptions
 
-Zaldo offers a free plan and a paid **Pro** plan, available on a **monthly** or **annual** billing cycle. Paid subscriptions are billed in advance through our payment processor, Stripe, and renew automatically until cancelled.
+Zaldo offers a free plan and a paid **Pro** plan. Pro is available on a **monthly** or **annual** billing cycle, and — as a limited early-access offer to a limited number of users — as a one-time **Lifetime** purchase. Paid subscriptions are billed in advance through our payment processor, Stripe, and renew automatically until cancelled. The Lifetime plan is a single one-time payment with no recurring billing (see Sections 3 and 4 for how cancellation and refunds apply to it).
 
 ---
 
 ## 2. Free trial
 
-The Pro plan may be offered with a **14-day free trial**. 
+The Pro plan may be offered with a **14-day free trial**.
 
 - You will **not** be charged during the trial.
 - If you do not cancel before the trial ends, your subscription automatically converts to a paid plan and your payment method is charged at the price shown at checkout.
@@ -35,6 +35,8 @@ You can cancel your Pro subscription at any time:
 - After that date, your account automatically reverts to the **free plan**.
 - **You do not lose your data.** Your transactions, categories, and history remain in your account. Features beyond the free plan's limits become unavailable until you upgrade again, but nothing is deleted. If you resubscribe, your full access is restored.
 
+**Lifetime purchases:** Because the Lifetime plan is a one-time purchase and not a recurring subscription, there is no billing cycle to cancel and it is not managed through the Stripe customer portal. Your Lifetime access continues for the operational lifetime of the Service (see our [Terms of Service](../terms-of-service.html)).
+
 ---
 
 ## 4. Refunds
@@ -49,6 +51,8 @@ However, we want you to be treated fairly. We will consider refunds on a case-by
 To request a refund, contact **support@mizaldo.com** within **14 days** of the charge, including the email address on your account and the approximate date and amount of the charge. We will review your request and respond within a reasonable timeframe.
 
 Where required by applicable consumer protection law in your jurisdiction, you may have additional refund or cancellation rights, and nothing in this policy limits those rights.
+
+**Lifetime purchases:** The Lifetime plan is a one-time promotional offer and is final and non-refundable, except where required by applicable law. Because Pro can be fully evaluated for free (through both the free plan and the 14-day free trial) before any Lifetime purchase, we do not provide refunds for Lifetime purchases once completed. The billing-error protections above (such as duplicate charges or charges due to a technical error attributable to us) still apply.
 
 ---
 

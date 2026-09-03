@@ -1,6 +1,6 @@
 # Terms of Service — Zaldo
 
-**Last updated: June 25, 2026**
+**Last updated: September 3, 2026**
 
 These Terms of Service ("Terms") govern your access to and use of Zaldo (the "Service"), operated by Jaguar Hosting LLC ("Jaguar Hosting," "we," "us," or "our"). By creating an account or using the Service, you agree to be bound by these Terms. If you do not agree, do not use the Service.
 
@@ -25,7 +25,7 @@ Zaldo is an informational and organizational tool. It is **not** a bank, financi
 
 ## 3. The Gmail add-on and Google data
 
-If you choose to install the Zaldo Gmail add-on, you authorize Zaldo to access the specific bank notification email you open in order to detect and extract transaction details. Our access to and use of Google user data is described in our [Privacy Policy](#) and adheres to the Google API Services User Data Policy, including the Limited Use requirements.
+If you choose to install the Zaldo Gmail add-on, you authorize Zaldo to access the specific bank notification email you open in order to detect and extract transaction details. Our access to and use of Google user data is described in our [Privacy Policy](../privacy-policy.html) and adheres to the Google API Services User Data Policy, including the Limited Use requirements.
 
 You may revoke Zaldo's access to your Gmail at any time through your Google Account settings. Installing and using the add-on is optional; you can use Zaldo's manual features without it.
 
@@ -34,7 +34,7 @@ You may revoke Zaldo's access to your Gmail at any time through your Google Acco
 ## 4. Plans, subscriptions, and billing
 
 ### 4.1 Plans
-Zaldo offers a free plan and a paid "Pro" plan. The features and limits of each plan are described within the Service and may change over time. We will make reasonable efforts to communicate material changes.
+Zaldo offers a free plan and a paid "Pro" plan. Pro may be offered as a recurring subscription (monthly or annually) and, as a limited early-access offer available to a limited number of users, as a one-time "Lifetime" purchase that grants Pro access without recurring billing. Once the Lifetime offer is no longer available, Pro is offered on a subscription basis only. The features, pricing, and limits of each plan are described within the Service and may change over time. We will make reasonable efforts to communicate material changes.
 
 ### 4.2 Free trial
 The Pro plan may be offered with a free trial period (for example, 14 days). If you do not cancel before the trial ends, you will be charged for the plan you selected at the price shown at checkout. You may cancel at any time before the trial ends to avoid being charged.
@@ -46,10 +46,13 @@ Paid subscriptions are billed in advance on a recurring basis (monthly or annual
 We may change subscription prices. If we do, we will give you reasonable advance notice, and any price change will apply to billing periods after the notice.
 
 ### 4.5 Cancellation
-You may cancel your subscription at any time through the Service or the Stripe customer portal. Cancellation takes effect at the end of your current billing period. After cancellation, your account reverts to the free plan and you retain your data, subject to the limits of the free plan. See our **Refund & Cancellation Policy** for details.
+You may cancel your recurring subscription at any time through the Service or the Stripe customer portal. Cancellation takes effect at the end of your current billing period. After cancellation, your account reverts to the free plan and you retain your data, subject to the limits of the free plan. Lifetime purchases are one-time and have no subscription to cancel (see Section 4.7). See our [Refund & Cancellation Policy](../refund-and-cancellation-policy.html) for details.
 
 ### 4.6 Taxes
 You are responsible for any applicable taxes associated with your purchase, except for taxes based on our net income.
+
+### 4.7 Lifetime purchase
+The "Lifetime" plan is a one-time payment that grants Pro access for the lifetime of the Service, with no recurring charges. Because it is a one-time purchase rather than a subscription, it has no billing cycle to cancel and is not managed through the Stripe customer portal. Lifetime purchases are final and non-refundable, except where required by applicable law. "Lifetime" refers to the operational lifetime of the Zaldo Service; if we discontinue the Service, please refer to Section 7 and our [Refund & Cancellation Policy](../refund-and-cancellation-policy.html). Lifetime access is tied to your account and may not be transferred or resold.
 
 ---
 
@@ -69,7 +72,7 @@ We may suspend or terminate your access if you violate these Terms or use the Se
 
 ## 6. Your data and content
 
-You retain ownership of the data and content you submit to Zaldo. You grant us a limited license to store, process, and display that data solely to provide and improve the Service for you, as described in our Privacy Policy.
+You retain ownership of the data and content you submit to Zaldo. You grant us a limited license to store, process, and display that data solely to provide and improve the Service for you, as described in our [Privacy Policy](../privacy-policy.html).
 
 You are responsible for the accuracy of the data in your account. Because transaction detection from emails is automated, it may occasionally be incomplete or inaccurate; you are responsible for reviewing and correcting your records.
 
@@ -83,7 +86,7 @@ We strive to keep Zaldo available and reliable, but we do not guarantee that the
 
 ## 8. Third-party services
 
-Zaldo relies on third-party services, including Google, Stripe, Supabase, and others. Your use of those services through Zaldo may be subject to their own terms and privacy policies. We are not responsible for the practices of third-party services.
+Zaldo relies on third-party services, including Google, Stripe, Supabase, Meta, and others. Your use of those services through Zaldo may be subject to their own terms and privacy policies. We are not responsible for the practices of third-party services. For details on how we share data with these providers, see our [Privacy Policy](../privacy-policy.html).
 
 ---
 

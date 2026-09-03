@@ -5318,6 +5318,50 @@ html.js-animations .hero-showcase.is-visible .hero-float--right {
   max-width: 52ch;
 }
 
+.support-contact {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  gap: 0.75rem;
+  margin-top: 1.25rem;
+}
+
+.support-contact-btn {
+  display: inline-flex;
+  align-items: center;
+  gap: 0.5rem;
+  padding: 0.6875rem 1.125rem;
+  border-radius: var(--radius-pill);
+  font-size: 0.875rem;
+  font-weight: 600;
+  line-height: 1.2;
+  text-decoration: none;
+}
+
+.support-contact-btn svg {
+  width: 1.125rem;
+  height: 1.125rem;
+  flex-shrink: 0;
+}
+
+.support-contact-btn--email {
+  background: var(--card-bg);
+  color: var(--heading-dark);
+}
+
+.support-contact-btn--email:hover {
+  background: #e8ecec;
+}
+
+.support-contact-btn--whatsapp {
+  background: #25d366;
+  color: #fff;
+}
+
+.support-contact-btn--whatsapp:hover {
+  background: #1ebe5d;
+}
+
 .support-faq h2 {
   font-size: 1.125rem;
   color: var(--heading-dark);
