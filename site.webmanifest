@@ -8,8 +8,8 @@
   "theme_color": "#4FD1C5",
   "icons": [
     {
-      "src": "/assets/img/favicon/zaldo_128x128.png",
-      "sizes": "128x128",
+      "src": "/assets/icons/zaldo-favicon.png",
+      "sizes": "512x512",
       "type": "image/png"
     }
   ]
