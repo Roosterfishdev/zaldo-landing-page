@@ -5,14 +5,14 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Soporte — Zaldo</title>
   <meta name="description" content="Preguntas frecuentes y contacto de soporte de Zaldo. Escribinos a support@mizaldo.com o por WhatsApp.">
-  <link rel="canonical" href="https://mizaldo.com/soporte/">
+  <link rel="canonical" href="https://mizaldo.com/soporte">
   <meta name="theme-color" content="#4FD1C5">
 
   <!-- Open Graph -->
   <meta property="og:type" content="website">
   <meta property="og:title" content="Soporte — Zaldo">
   <meta property="og:description" content="Preguntas frecuentes y contacto de soporte de Zaldo. Escribinos a support@mizaldo.com o por WhatsApp.">
-  <meta property="og:url" content="https://mizaldo.com/soporte/">
+  <meta property="og:url" content="https://mizaldo.com/soporte">
   <meta property="og:image" content="https://mizaldo.com/assets/img/og-image.jpg">
   <meta property="og:image:width" content="1200">
   <meta property="og:image:height" content="630">
@@ -29,9 +29,9 @@
   <link rel="icon" type="image/png" sizes="512x512" href="/assets/icons/zaldo-favicon.png">
   <link rel="apple-touch-icon" href="/assets/icons/zaldo-favicon.png">
   <style>
-@font-face{font-family:'Aeonik Pro';src:url('/assets/aeonik-pro/aeonik-regular.woff') format('woff');font-weight:400;font-style:normal;font-display:swap}
-@font-face{font-family:'Aeonik Pro';src:url('/assets/aeonik-pro/aeonik-medium.woff') format('woff');font-weight:600;font-style:normal;font-display:swap}
-@font-face{font-family:'Aeonik Pro';src:url('/assets/aeonik-pro/aeonik-bold.woff') format('woff');font-weight:700;font-style:normal;font-display:swap}
+@font-face{font-family:'Aeonik Pro';src:url('/assets/aeonik-pro/aeonik-regular.woff2') format('woff2'),url('/assets/aeonik-pro/aeonik-regular.woff') format('woff');font-weight:400;font-style:normal;font-display:swap}
+@font-face{font-family:'Aeonik Pro';src:url('/assets/aeonik-pro/aeonik-medium.woff2') format('woff2'),url('/assets/aeonik-pro/aeonik-medium.woff') format('woff');font-weight:600;font-style:normal;font-display:swap}
+@font-face{font-family:'Aeonik Pro';src:url('/assets/aeonik-pro/aeonik-bold.woff2') format('woff2'),url('/assets/aeonik-pro/aeonik-bold.woff') format('woff');font-weight:700;font-style:normal;font-display:swap}
 *,*::before,*::after{box-sizing:border-box;margin:0;padding:0}
 :root{--teal:#4FD1C5;--teal-dark:#1a6b63;--heading-dark:#0f2e2c;--text-body:#64748b;--radius-pill:9999px;--surface:#fff}
 body{font-family:'Aeonik Pro',system-ui,sans-serif;background:var(--surface);color:var(--heading-dark);min-height:100vh;-webkit-font-smoothing:antialiased}
@@ -57,6 +57,103 @@ body{font-family:'Aeonik Pro',system-ui,sans-serif;background:var(--surface);col
   <link rel="preload" as="style" href="/assets/css/styles.css">
   <link rel="stylesheet" href="/assets/css/styles.css" media="print" onload="this.media='all'">
   <noscript><link rel="stylesheet" href="/assets/css/styles.css"></noscript>
+
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "FAQPage",
+    "mainEntity": [
+      {
+        "@type": "Question",
+        "name": "¿Qué es Zaldo?",
+        "acceptedAnswer": {
+          "@type": "Answer",
+          "text": "Zaldo es una app de finanzas personales para Costa Rica. Lee las notificaciones que tu banco te manda por correo cuando hacés una compra, y las convierte automáticamente en transacciones ordenadas y categorizadas en tu dashboard. Vos solo revisás."
+        }
+      },
+      {
+        "@type": "Question",
+        "name": "¿Cómo instalo el complemento de Gmail?",
+        "acceptedAnswer": {
+          "@type": "Answer",
+          "text": "Instalás el complemento desde el Google Workspace Marketplace. Una vez instalado, cuando abrás un correo de banco en Gmail, el panel de Zaldo aparece a la derecha y podés guardar la transacción con un toque."
+        }
+      },
+      {
+        "@type": "Question",
+        "name": "¿El complemento de Gmail es gratis?",
+        "acceptedAnswer": {
+          "@type": "Answer",
+          "text": "El complemento (la importación automática desde Gmail) es parte del plan Pro. Con el plan gratuito podés usar el dashboard y agregar transacciones manualmente; para que Zaldo lea tus correos de banco y las importe solas, necesitás Pro."
+        }
+      },
+      {
+        "@type": "Question",
+        "name": "¿Qué bancos lee Zaldo?",
+        "acceptedAnswer": {
+          "@type": "Answer",
+          "text": "Actualmente Zaldo lee las notificaciones de: BAC, Promerica, Banco Nacional (BN), BCR, DAVIbank, Davivienda, LAFISE, Wink, Banco General, Credisiman (Siman Visa) y Credix. Estamos agregando más bancos constantemente."
+        }
+      },
+      {
+        "@type": "Question",
+        "name": "¿Zaldo lee todos mis correos?",
+        "acceptedAnswer": {
+          "@type": "Answer",
+          "text": "No. Zaldo lee únicamente la notificación de banco que tenés abierta en ese momento. No entra a tu bandeja de entrada, no escanea tus otros correos, no lee tu historial. Solo ese correo del banco, y solo cuando vos lo abrís."
+        }
+      },
+      {
+        "@type": "Question",
+        "name": "¿Zaldo guarda mis correos?",
+        "acceptedAnswer": {
+          "@type": "Answer",
+          "text": "No. Zaldo saca solo los datos de la transacción (comercio, monto, fecha, banco) y guarda esa transacción. El contenido del correo no se almacena."
+        }
+      },
+      {
+        "@type": "Question",
+        "name": "¿Zaldo ve el número de mi tarjeta?",
+        "acceptedAnswer": {
+          "@type": "Answer",
+          "text": "No. Zaldo nunca ve ni guarda el número completo de tu tarjeta. Solo usa los últimos 4 dígitos que el banco incluye en la notificación, para que sepás con cuál tarjeta fue cada gasto."
+        }
+      },
+      {
+        "@type": "Question",
+        "name": "¿Mis datos están seguros?",
+        "acceptedAnswer": {
+          "@type": "Answer",
+          "text": "Sí. Zaldo está verificada por Google para el manejo de datos de Gmail. Tus transacciones viajan encriptadas, están guardadas de forma segura, y solo vos las podés ver."
+        }
+      },
+      {
+        "@type": "Question",
+        "name": "¿En qué países funciona Zaldo?",
+        "acceptedAnswer": {
+          "@type": "Answer",
+          "text": "Por ahora Zaldo funciona solo en Costa Rica, ya que leemos las notificaciones de los bancos costarricenses. Estamos trabajando para llegar a más países."
+        }
+      },
+      {
+        "@type": "Question",
+        "name": "¿Hay app para iPhone o Android?",
+        "acceptedAnswer": {
+          "@type": "Answer",
+          "text": "Por ahora Zaldo es una aplicación web, a la que podés entrar desde cualquier navegador en tu compu o celular. Muy pronto vamos a estar en las tiendas de aplicaciones."
+        }
+      },
+      {
+        "@type": "Question",
+        "name": "¿Puedo cancelar cuando quiera?",
+        "acceptedAnswer": {
+          "@type": "Answer",
+          "text": "Sí. Podés cancelar tu plan cuando quieras desde tu cuenta, y si algún día querés irte, podés borrar tu cuenta y todos tus datos."
+        }
+      }
+    ]
+  }
+  </script>
 
   <!-- Meta Pixel Code -->
   <script async src="/assets/js/meta-pixel.js"></script>
@@ -117,100 +214,100 @@ body{font-family:'Aeonik Pro',system-ui,sans-serif;background:var(--surface);col
         <h2 id="support-faq-title">Preguntas frecuentes</h2>
         <ul class="faq-list">
           <li class="faq-item">
-            <button type="button" class="faq-question" aria-expanded="false">
+            <h3><button type="button" class="faq-question" aria-expanded="false">
               <span>¿Qué es Zaldo?</span>
               <span class="faq-icon" aria-hidden="true">+</span>
-            </button>
+            </button></h3>
             <div class="faq-answer">
               <div class="faq-answer-inner">Zaldo es una app de finanzas personales para Costa Rica. Lee las notificaciones que tu banco te manda por correo cuando hacés una compra, y las convierte automáticamente en transacciones ordenadas y categorizadas en tu dashboard. Vos solo revisás.</div>
             </div>
           </li>
           <li class="faq-item">
-            <button type="button" class="faq-question" aria-expanded="false">
+            <h3><button type="button" class="faq-question" aria-expanded="false">
               <span>¿Cómo instalo el complemento de Gmail?</span>
               <span class="faq-icon" aria-hidden="true">+</span>
-            </button>
+            </button></h3>
             <div class="faq-answer">
               <div class="faq-answer-inner">Instalás el complemento desde el <a href="https://workspace.google.com/marketplace/app/zaldo/243367250792" target="_blank" rel="noopener noreferrer">Google Workspace Marketplace</a>. Una vez instalado, cuando abrás un correo de banco en Gmail, el panel de Zaldo aparece a la derecha y podés guardar la transacción con un toque.</div>
             </div>
           </li>
           <li class="faq-item">
-            <button type="button" class="faq-question" aria-expanded="false">
+            <h3><button type="button" class="faq-question" aria-expanded="false">
               <span>¿El complemento de Gmail es gratis?</span>
               <span class="faq-icon" aria-hidden="true">+</span>
-            </button>
+            </button></h3>
             <div class="faq-answer">
               <div class="faq-answer-inner">El complemento (la importación automática desde Gmail) es parte del plan Pro. Con el plan gratuito podés usar el dashboard y agregar transacciones manualmente; para que Zaldo lea tus correos de banco y las importe solas, necesitás Pro.</div>
             </div>
           </li>
           <li class="faq-item">
-            <button type="button" class="faq-question" aria-expanded="false">
+            <h3><button type="button" class="faq-question" aria-expanded="false">
               <span>¿Qué bancos lee Zaldo?</span>
               <span class="faq-icon" aria-hidden="true">+</span>
-            </button>
+            </button></h3>
             <div class="faq-answer">
               <div class="faq-answer-inner">Actualmente Zaldo lee las notificaciones de: BAC, Promerica, Banco Nacional (BN), BCR, DAVIbank, Davivienda, LAFISE, Wink, Banco General, Credisiman (Siman Visa) y Credix. Estamos agregando más bancos constantemente.</div>
             </div>
           </li>
           <li class="faq-item">
-            <button type="button" class="faq-question" aria-expanded="false">
+            <h3><button type="button" class="faq-question" aria-expanded="false">
               <span>¿Zaldo lee todos mis correos?</span>
               <span class="faq-icon" aria-hidden="true">+</span>
-            </button>
+            </button></h3>
             <div class="faq-answer">
               <div class="faq-answer-inner">No. Zaldo lee únicamente la notificación de banco que tenés abierta en ese momento. No entra a tu bandeja de entrada, no escanea tus otros correos, no lee tu historial. Solo ese correo del banco, y solo cuando vos lo abrís.</div>
             </div>
           </li>
           <li class="faq-item">
-            <button type="button" class="faq-question" aria-expanded="false">
+            <h3><button type="button" class="faq-question" aria-expanded="false">
               <span>¿Zaldo guarda mis correos?</span>
               <span class="faq-icon" aria-hidden="true">+</span>
-            </button>
+            </button></h3>
             <div class="faq-answer">
               <div class="faq-answer-inner">No. Zaldo saca solo los datos de la transacción (comercio, monto, fecha, banco) y guarda esa transacción. El contenido del correo no se almacena.</div>
             </div>
           </li>
           <li class="faq-item">
-            <button type="button" class="faq-question" aria-expanded="false">
+            <h3><button type="button" class="faq-question" aria-expanded="false">
               <span>¿Zaldo ve el número de mi tarjeta?</span>
               <span class="faq-icon" aria-hidden="true">+</span>
-            </button>
+            </button></h3>
             <div class="faq-answer">
               <div class="faq-answer-inner">No. Zaldo nunca ve ni guarda el número completo de tu tarjeta. Solo usa los últimos 4 dígitos que el banco incluye en la notificación, para que sepás con cuál tarjeta fue cada gasto.</div>
             </div>
           </li>
           <li class="faq-item">
-            <button type="button" class="faq-question" aria-expanded="false">
+            <h3><button type="button" class="faq-question" aria-expanded="false">
               <span>¿Mis datos están seguros?</span>
               <span class="faq-icon" aria-hidden="true">+</span>
-            </button>
+            </button></h3>
             <div class="faq-answer">
               <div class="faq-answer-inner">Sí. Zaldo está verificada por Google para el manejo de datos de Gmail. Tus transacciones viajan encriptadas, están guardadas de forma segura, y solo vos las podés ver.</div>
             </div>
           </li>
           <li class="faq-item">
-            <button type="button" class="faq-question" aria-expanded="false">
+            <h3><button type="button" class="faq-question" aria-expanded="false">
               <span>¿En qué países funciona Zaldo?</span>
               <span class="faq-icon" aria-hidden="true">+</span>
-            </button>
+            </button></h3>
             <div class="faq-answer">
               <div class="faq-answer-inner">Por ahora Zaldo funciona solo en Costa Rica, ya que leemos las notificaciones de los bancos costarricenses. Estamos trabajando para llegar a más países.</div>
             </div>
           </li>
           <li class="faq-item">
-            <button type="button" class="faq-question" aria-expanded="false">
+            <h3><button type="button" class="faq-question" aria-expanded="false">
               <span>¿Hay app para iPhone o Android?</span>
               <span class="faq-icon" aria-hidden="true">+</span>
-            </button>
+            </button></h3>
             <div class="faq-answer">
               <div class="faq-answer-inner">Por ahora Zaldo es una aplicación web, a la que podés entrar desde cualquier navegador en tu compu o celular. Muy pronto vamos a estar en las tiendas de aplicaciones.</div>
             </div>
           </li>
           <li class="faq-item">
-            <button type="button" class="faq-question" aria-expanded="false">
+            <h3><button type="button" class="faq-question" aria-expanded="false">
               <span>¿Puedo cancelar cuando quiera?</span>
               <span class="faq-icon" aria-hidden="true">+</span>
-            </button>
+            </button></h3>
             <div class="faq-answer">
               <div class="faq-answer-inner">Sí. Podés cancelar tu plan cuando quieras desde tu cuenta, y si algún día querés irte, podés borrar tu cuenta y todos tus datos.</div>
             </div>

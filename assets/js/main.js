@@ -322,42 +322,40 @@
     });
   });
 
-  /* FAQPage JSON-LD derived from the live FAQ markup so Q&A stay in sync. */
-  (function injectFaqJsonLd() {
-    var items = document.querySelectorAll('#faq .faq-item');
-    if (!items.length) return;
+  function initLegalLangToggle() {
+    var groups = document.querySelectorAll('.legal-lang-toggle');
+    if (!groups.length) return;
 
-    var mainEntity = [];
-    items.forEach(function (item) {
-      var questionEl = item.querySelector('.faq-question span:not(.faq-icon)');
-      var answerEl = item.querySelector('.faq-answer-inner');
-      if (!questionEl || !answerEl) return;
+    var contents = document.querySelectorAll('.legal-lang-content');
+    var storageKey = 'zaldo-legal-lang';
 
-      var question = questionEl.textContent.replace(/\s+/g, ' ').trim();
-      var answer = answerEl.textContent.replace(/\s+/g, ' ').trim();
-      if (!question || !answer) return;
+    function setLang(lang) {
+      groups.forEach(function (group) {
+        group.querySelectorAll('[data-lang]').forEach(function (btn) {
+          var active = btn.dataset.lang === lang;
+          btn.classList.toggle('active', active);
+          btn.setAttribute('aria-pressed', active ? 'true' : 'false');
+        });
+      });
+      contents.forEach(function (content) {
+        content.hidden = content.dataset.lang !== lang;
+      });
+      document.documentElement.lang = lang;
+      try { sessionStorage.setItem(storageKey, lang); } catch (e) {}
+    }
 
-      mainEntity.push({
-        '@type': 'Question',
-        name: question,
-        acceptedAnswer: {
-          '@type': 'Answer',
-          text: answer
-        }
+    groups.forEach(function (group) {
+      group.querySelectorAll('[data-lang]').forEach(function (btn) {
+        btn.addEventListener('click', function () { setLang(btn.dataset.lang); });
       });
     });
 
-    if (!mainEntity.length) return;
+    var saved;
+    try { saved = sessionStorage.getItem(storageKey); } catch (e) {}
+    if (saved === 'en') setLang('en');
+  }
 
-    var script = document.createElement('script');
-    script.type = 'application/ld+json';
-    script.textContent = JSON.stringify({
-      '@context': 'https://schema.org',
-      '@type': 'FAQPage',
-      mainEntity: mainEntity
-    });
-    document.head.appendChild(script);
-  })();
+  initLegalLangToggle();
 
   }
 

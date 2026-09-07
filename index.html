@@ -34,12 +34,13 @@
   <link rel="manifest" href="/site.webmanifest">
 
   <!-- Styles -->
-  <link rel="preload" href="assets/aeonik-pro/aeonik-regular.woff" as="font" type="font/woff" crossorigin>
-  <link rel="preload" href="assets/aeonik-pro/aeonik-bold.woff" as="font" type="font/woff" crossorigin>
+  <link rel="preload" href="assets/aeonik-pro/aeonik-regular.woff2" as="font" type="font/woff2" crossorigin>
+  <link rel="preload" href="assets/aeonik-pro/aeonik-medium.woff2" as="font" type="font/woff2" crossorigin>
+  <link rel="preload" href="assets/aeonik-pro/aeonik-bold.woff2" as="font" type="font/woff2" crossorigin>
   <style>
-@font-face{font-family:'Aeonik Pro';src:url('/assets/aeonik-pro/aeonik-regular.woff') format('woff');font-weight:400;font-style:normal;font-display:swap}
-@font-face{font-family:'Aeonik Pro';src:url('/assets/aeonik-pro/aeonik-medium.woff') format('woff');font-weight:600;font-style:normal;font-display:swap}
-@font-face{font-family:'Aeonik Pro';src:url('/assets/aeonik-pro/aeonik-bold.woff') format('woff');font-weight:700;font-style:normal;font-display:swap}
+@font-face{font-family:'Aeonik Pro';src:url('/assets/aeonik-pro/aeonik-regular.woff2') format('woff2'),url('/assets/aeonik-pro/aeonik-regular.woff') format('woff');font-weight:400;font-style:normal;font-display:swap}
+@font-face{font-family:'Aeonik Pro';src:url('/assets/aeonik-pro/aeonik-medium.woff2') format('woff2'),url('/assets/aeonik-pro/aeonik-medium.woff') format('woff');font-weight:600;font-style:normal;font-display:swap}
+@font-face{font-family:'Aeonik Pro';src:url('/assets/aeonik-pro/aeonik-bold.woff2') format('woff2'),url('/assets/aeonik-pro/aeonik-bold.woff') format('woff');font-weight:700;font-style:normal;font-display:swap}
 *,*::before,*::after{box-sizing:border-box;margin:0;padding:0}
 :root{--teal:#4FD1C5;--teal-dark:#1a6b63;--heading-dark:#0f2e2c;--text-body:#64748b;--radius-pill:9999px;--surface:#fff;--card-bg:#f4f6f6}
 body{font-family:'Aeonik Pro',system-ui,sans-serif;background:var(--surface);color:var(--heading-dark);min-height:100vh;overflow-x:hidden;-webkit-font-smoothing:antialiased}
@@ -118,18 +119,119 @@ body{font-family:'Aeonik Pro',system-ui,sans-serif;background:var(--surface);col
     "url": "https://mizaldo.com/",
     "applicationCategory": "FinanceApplication",
     "operatingSystem": "Web, Android, iOS",
-    "description": "Zaldo convierte los correos de tu banco en un control de gastos automático. Sin anotar nada a mano, sin Excel.",
+    "description": "Zaldo es una app de finanzas personales para Costa Rica que lee las notificaciones que tu banco te manda por correo y las convierte automáticamente en transacciones ordenadas y categorizadas. Sin anotar nada a mano, sin Excel.",
     "offers": {
-      "@type": "Offer",
-      "price": "0",
-      "priceCurrency": "CRC"
+      "@type": "AggregateOffer",
+      "lowPrice": "0",
+      "highPrice": "4.99",
+      "priceCurrency": "USD",
+      "offerCount": "2",
+      "offers": [
+        {
+          "@type": "Offer",
+          "name": "Gratis",
+          "price": "0",
+          "priceCurrency": "USD"
+        },
+        {
+          "@type": "Offer",
+          "name": "Pro",
+          "price": "4.99",
+          "priceCurrency": "USD",
+          "priceSpecification": {
+            "@type": "UnitPriceSpecification",
+            "price": "4.99",
+            "priceCurrency": "USD",
+            "billingIncrement": 1,
+            "unitCode": "MON"
+          }
+        }
+      ]
     },
     "publisher": {
       "@type": "Organization",
       "name": "Zaldo",
       "url": "https://mizaldo.com/",
-      "logo": "https://mizaldo.com/assets/zaldo-logo-v1.svg"
+      "logo": "https://mizaldo.com/assets/zaldo-logo-v1.svg",
+      "sameAs": [
+        "https://www.facebook.com/profile.php?id=61590515493888",
+        "https://www.instagram.com/zaldoapp",
+        "https://workspace.google.com/marketplace/app/zaldo/243367250792"
+      ]
     }
+  }
+  </script>
+
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "FAQPage",
+    "mainEntity": [
+      {
+        "@type": "Question",
+        "name": "¿Qué es Zaldo?",
+        "acceptedAnswer": {
+          "@type": "Answer",
+          "text": "Zaldo es una app de finanzas personales para Costa Rica. Lee las notificaciones que tu banco te manda por correo cuando hacés una compra, y las convierte automáticamente en transacciones ordenadas y categorizadas en tu dashboard. Vos solo revisás."
+        }
+      },
+      {
+        "@type": "Question",
+        "name": "¿Zaldo entra a mi banca en línea?",
+        "acceptedAnswer": {
+          "@type": "Answer",
+          "text": "No, nunca. Zaldo no tiene acceso a tu cuenta bancaria ni a tus contraseñas. Solo lee los correos de notificación que tu banco ya te manda cuando hacés una compra. Nada más."
+        }
+      },
+      {
+        "@type": "Question",
+        "name": "¿Con cuáles bancos funciona?",
+        "acceptedAnswer": {
+          "@type": "Answer",
+          "text": "Actualmente Zaldo lee las notificaciones de: BAC, Promerica, Banco Nacional (BN), BCR, DAVIbank, Davivienda, LAFISE, Wink, Banco General, Credisiman (Siman Visa) y Credix. Estamos agregando más bancos constantemente."
+        }
+      },
+      {
+        "@type": "Question",
+        "name": "¿Tengo que anotar mis gastos a mano?",
+        "acceptedAnswer": {
+          "@type": "Answer",
+          "text": "Con el add-on de Gmail no: tus compras con tarjeta se importan solas. Y si pagaste en efectivo o por SINPE, lo agregás manualmente en segundos. Vos elegís."
+        }
+      },
+      {
+        "@type": "Question",
+        "name": "¿Es seguro conectar mi Gmail?",
+        "acceptedAnswer": {
+          "@type": "Answer",
+          "text": "Sí. Zaldo solo pide permiso para leer los correos de tu banco, y no toca nada más de tu bandeja. Tus datos son tuyos y no los compartimos con nadie."
+        }
+      },
+      {
+        "@type": "Question",
+        "name": "¿Qué pasa si cancelo el plan Pro?",
+        "acceptedAnswer": {
+          "@type": "Answer",
+          "text": "No perdés nada de tu información. Tu cuenta pasa al plan Gratis y conservás todos tus datos. Si algún día volvés a Pro, todo se restaura tal cual lo dejaste."
+        }
+      },
+      {
+        "@type": "Question",
+        "name": "¿Puedo usar Zaldo gratis de verdad?",
+        "acceptedAnswer": {
+          "@type": "Answer",
+          "text": "Sí. El plan Gratis es gratis para siempre e incluye lo esencial para llevar el control de tus gastos. Pasás a Pro solo si querés la importación automática y las funciones avanzadas."
+        }
+      },
+      {
+        "@type": "Question",
+        "name": "¿En qué moneda funciona?",
+        "acceptedAnswer": {
+          "@type": "Answer",
+          "text": "En colones y dólares. Podés cambiar entre CRC y USD cuando querás, y Zaldo convierte todo con el tipo de cambio del día."
+        }
+      }
+    ]
   }
   </script>
 
@@ -899,64 +1001,73 @@ body{font-family:'Aeonik Pro',system-ui,sans-serif;background:var(--surface);col
 
       <ul class="faq-list">
         <li class="faq-item">
-          <button type="button" class="faq-question" aria-expanded="false">
+          <h3><button type="button" class="faq-question" aria-expanded="false">
+            <span>¿Qué es Zaldo?</span>
+            <span class="faq-icon" aria-hidden="true">+</span>
+          </button></h3>
+          <div class="faq-answer">
+            <div class="faq-answer-inner">Zaldo es una app de finanzas personales para Costa Rica. Lee las notificaciones que tu banco te manda por correo cuando hacés una compra, y las convierte automáticamente en transacciones ordenadas y categorizadas en tu dashboard. Vos solo revisás.</div>
+          </div>
+        </li>
+        <li class="faq-item">
+          <h3><button type="button" class="faq-question" aria-expanded="false">
             <span>¿Zaldo entra a mi banca en línea?</span>
             <span class="faq-icon" aria-hidden="true">+</span>
-          </button>
+          </button></h3>
           <div class="faq-answer">
             <div class="faq-answer-inner">No, nunca. Zaldo no tiene acceso a tu cuenta bancaria ni a tus contraseñas. Solo lee los correos de notificación que tu banco ya te manda cuando hacés una compra. Nada más.</div>
           </div>
         </li>
         <li class="faq-item">
-          <button type="button" class="faq-question" aria-expanded="false">
+          <h3><button type="button" class="faq-question" aria-expanded="false">
             <span>¿Con cuáles bancos funciona?</span>
             <span class="faq-icon" aria-hidden="true">+</span>
-          </button>
+          </button></h3>
           <div class="faq-answer">
             <div class="faq-answer-inner">Actualmente Zaldo lee las notificaciones de: BAC, Promerica, Banco Nacional (BN), BCR, DAVIbank, Davivienda, LAFISE, Wink, Banco General, Credisiman (Siman Visa) y Credix. Estamos agregando más bancos constantemente.</div>
           </div>
         </li>
         <li class="faq-item">
-          <button type="button" class="faq-question" aria-expanded="false">
+          <h3><button type="button" class="faq-question" aria-expanded="false">
             <span>¿Tengo que anotar mis gastos a mano?</span>
             <span class="faq-icon" aria-hidden="true">+</span>
-          </button>
+          </button></h3>
           <div class="faq-answer">
             <div class="faq-answer-inner">Con el add-on de Gmail no: tus compras con tarjeta se importan solas. Y si pagaste en efectivo o por SINPE, lo agregás manualmente en segundos. Vos elegís.</div>
           </div>
         </li>
         <li class="faq-item">
-          <button type="button" class="faq-question" aria-expanded="false">
+          <h3><button type="button" class="faq-question" aria-expanded="false">
             <span>¿Es seguro conectar mi Gmail?</span>
             <span class="faq-icon" aria-hidden="true">+</span>
-          </button>
+          </button></h3>
           <div class="faq-answer">
             <div class="faq-answer-inner">Sí. Zaldo solo pide permiso para leer los correos de tu banco, y no toca nada más de tu bandeja. Tus datos son tuyos y no los compartimos con nadie.</div>
           </div>
         </li>
         <li class="faq-item">
-          <button type="button" class="faq-question" aria-expanded="false">
+          <h3><button type="button" class="faq-question" aria-expanded="false">
             <span>¿Qué pasa si cancelo el plan Pro?</span>
             <span class="faq-icon" aria-hidden="true">+</span>
-          </button>
+          </button></h3>
           <div class="faq-answer">
             <div class="faq-answer-inner">No perdés nada de tu información. Tu cuenta pasa al plan Gratis y conservás todos tus datos. Si algún día volvés a Pro, todo se restaura tal cual lo dejaste.</div>
           </div>
         </li>
         <li class="faq-item">
-          <button type="button" class="faq-question" aria-expanded="false">
+          <h3><button type="button" class="faq-question" aria-expanded="false">
             <span>¿Puedo usar Zaldo gratis de verdad?</span>
             <span class="faq-icon" aria-hidden="true">+</span>
-          </button>
+          </button></h3>
           <div class="faq-answer">
             <div class="faq-answer-inner">Sí. El plan Gratis es gratis para siempre e incluye lo esencial para llevar el control de tus gastos. Pasás a Pro solo si querés la importación automática y las funciones avanzadas.</div>
           </div>
         </li>
         <li class="faq-item">
-          <button type="button" class="faq-question" aria-expanded="false">
+          <h3><button type="button" class="faq-question" aria-expanded="false">
             <span>¿En qué moneda funciona?</span>
             <span class="faq-icon" aria-hidden="true">+</span>
-          </button>
+          </button></h3>
           <div class="faq-answer">
             <div class="faq-answer-inner">En colones y dólares. Podés cambiar entre CRC y USD cuando querás, y Zaldo convierte todo con el tipo de cambio del día.</div>
           </div>
@@ -1023,7 +1134,7 @@ body{font-family:'Aeonik Pro',system-ui,sans-serif;background:var(--surface);col
             <div class="site-footer-col">
               <h3>Contacto</h3>
               <ul>
-                <li><a href="soporte/">Soporte</a></li>
+                <li><a href="soporte">Soporte</a></li>
                 <li><a href="mailto:support@mizaldo.com">support@mizaldo.com</a></li>
               </ul>
             </div>
