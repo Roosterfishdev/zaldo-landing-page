@@ -3,17 +3,35 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Página no encontrada — Zaldo</title>
-  <meta name="description" content="La página que buscás no existe o fue movida.">
-  <meta name="robots" content="noindex">
+  <title>Blog — Zaldo</title>
+  <meta name="description" content="Guías sobre control de gastos, presupuestos y finanzas personales para Costa Rica.">
+  <link rel="canonical" href="https://mizaldo.com/blog">
   <meta name="theme-color" content="#4FD1C5">
+
+  <!-- Open Graph -->
+  <meta property="og:type" content="website">
+  <meta property="og:title" content="Blog — Zaldo">
+  <meta property="og:description" content="Guías sobre control de gastos, presupuestos y finanzas personales para Costa Rica.">
+  <meta property="og:url" content="https://mizaldo.com/blog">
+  <meta property="og:image" content="https://mizaldo.com/assets/img/og-image.jpg">
+  <meta property="og:image:width" content="1200">
+  <meta property="og:image:height" content="630">
+  <meta property="og:locale" content="es_CR">
+  <meta property="og:site_name" content="Zaldo">
+
+  <!-- Twitter Card -->
+  <meta name="twitter:card" content="summary_large_image">
+  <meta name="twitter:title" content="Blog — Zaldo">
+  <meta name="twitter:description" content="Guías sobre control de gastos, presupuestos y finanzas personales para Costa Rica.">
+  <meta name="twitter:image" content="https://mizaldo.com/assets/img/og-image.jpg">
+
   <link rel="icon" href="/favicon.ico" sizes="any">
   <link rel="icon" type="image/png" sizes="512x512" href="/assets/icons/zaldo-favicon.png">
   <link rel="apple-touch-icon" href="/assets/icons/zaldo-favicon.png">
   <style>
-@font-face{font-family:'Aeonik Pro';src:url('/assets/aeonik-pro/aeonik-regular.woff') format('woff');font-weight:400;font-style:normal;font-display:swap}
-@font-face{font-family:'Aeonik Pro';src:url('/assets/aeonik-pro/aeonik-medium.woff') format('woff');font-weight:600;font-style:normal;font-display:swap}
-@font-face{font-family:'Aeonik Pro';src:url('/assets/aeonik-pro/aeonik-bold.woff') format('woff');font-weight:700;font-style:normal;font-display:swap}
+@font-face{font-family:'Aeonik Pro';src:url('/assets/aeonik-pro/aeonik-regular.woff2') format('woff2'),url('/assets/aeonik-pro/aeonik-regular.woff') format('woff');font-weight:400;font-style:normal;font-display:swap}
+@font-face{font-family:'Aeonik Pro';src:url('/assets/aeonik-pro/aeonik-medium.woff2') format('woff2'),url('/assets/aeonik-pro/aeonik-medium.woff') format('woff');font-weight:600;font-style:normal;font-display:swap}
+@font-face{font-family:'Aeonik Pro';src:url('/assets/aeonik-pro/aeonik-bold.woff2') format('woff2'),url('/assets/aeonik-pro/aeonik-bold.woff') format('woff');font-weight:700;font-style:normal;font-display:swap}
 *,*::before,*::after{box-sizing:border-box;margin:0;padding:0}
 :root{--teal:#4FD1C5;--teal-dark:#1a6b63;--heading-dark:#0f2e2c;--text-body:#64748b;--radius-pill:9999px;--surface:#fff}
 body{font-family:'Aeonik Pro',system-ui,sans-serif;background:var(--surface);color:var(--heading-dark);min-height:100vh;-webkit-font-smoothing:antialiased}
@@ -30,15 +48,22 @@ body{font-family:'Aeonik Pro',system-ui,sans-serif;background:var(--surface);col
 .nav-toggle,.nav-overlay{display:none}
 .btn{display:inline-flex;align-items:center;justify-content:center;padding:.625rem 1.25rem;min-height:2.75rem;border-radius:var(--radius-pill);font-family:inherit;font-size:.875rem;font-weight:600;line-height:1;text-decoration:none;border:none;cursor:pointer;white-space:nowrap}
 .btn--dark{background:#0F2E2C;color:#fff}
-.legal-main{flex:1;width:100%;max-width:720px;margin:0 auto;padding:3rem 1.5rem 5rem}
-.legal-main h1{font-size:clamp(1.75rem,4vw,2.25rem);font-weight:700;letter-spacing:-.03em;color:var(--heading-dark);line-height:1.2;margin-bottom:.75rem}
-.legal-meta{font-size:.875rem;color:var(--text-body);margin-bottom:2rem}
-.legal-main p{font-size:.9375rem;line-height:1.75;color:var(--text-body);margin-bottom:1rem}
 @media(max-width:768px){.nav{padding:1rem 1.5rem;z-index:200}.nav .logo-img{height:1.75rem}.nav-toggle{display:flex;flex-direction:column;justify-content:center;align-items:center;gap:5px;width:2.75rem;height:2.75rem;margin-left:auto;padding:0;border:none;background:transparent;cursor:pointer;z-index:202}.nav-toggle-bar{display:block;width:1.375rem;height:2px;background:var(--heading-dark);border-radius:1px}.nav-actions{position:fixed;top:0;right:0;width:min(100%,18.75rem);height:100dvh;flex-direction:column;align-items:stretch;padding:5rem 1.5rem 2rem;background:var(--surface);transform:translateX(100%);z-index:201}.nav-links{flex-direction:column;gap:0;width:100%}.nav-links a{display:block;padding:1rem 0;font-size:1rem}.nav-cta{flex-direction:column;width:100%;margin-top:1.5rem}.nav-cta .btn{width:100%;justify-content:center}}
   </style>
   <link rel="preload" as="style" href="/assets/css/styles.css">
   <link rel="stylesheet" href="/assets/css/styles.css" media="print" onload="this.media='all'">
   <noscript><link rel="stylesheet" href="/assets/css/styles.css"></noscript>
+
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "Blog",
+    "name": "Blog de Zaldo",
+    "description": "Guías sobre control de gastos, presupuestos y finanzas personales para Costa Rica.",
+    "url": "https://mizaldo.com/blog",
+    "publisher": { "@type": "Organization", "name": "Zaldo", "url": "https://mizaldo.com/", "logo": "https://mizaldo.com/assets/zaldo-logo-v1.svg" }
+  }
+  </script>
 
   <!-- Meta Pixel Code -->
   <script async src="/assets/js/meta-pixel.js"></script>
@@ -51,8 +76,8 @@ body{font-family:'Aeonik Pro',system-ui,sans-serif;background:var(--surface);col
 <body class="legal-page">
   <header class="page-header">
     <div class="nav">
-      <a href="index.html" class="logo" aria-label="Zaldo — inicio">
-        <img src="assets/zaldo-logo-v1.svg" alt="Zaldo" class="logo-img" width="511" height="195" decoding="async">
+      <a href="../index.html" class="logo" aria-label="Zaldo — inicio">
+        <img src="../assets/zaldo-logo-v1.svg" alt="Zaldo" class="logo-img" width="511" height="195" decoding="async">
       </a>
       <button type="button" class="nav-toggle" aria-expanded="false" aria-controls="nav-menu" aria-label="Abrir menú">
         <span class="nav-toggle-bar" aria-hidden="true"></span>
@@ -63,10 +88,10 @@ body{font-family:'Aeonik Pro',system-ui,sans-serif;background:var(--surface);col
       <div class="nav-actions" id="nav-menu">
         <nav aria-label="Principal">
           <ul class="nav-links">
-            <li><a href="index.html#how-it-works">Cómo funciona</a></li>
-            <li><a href="index.html#app-tour">Features</a></li>
-            <li><a href="index.html#pricing">Precio</a></li>
-            <li><a href="blog">Blog</a></li>
+            <li><a href="../index.html#how-it-works">Cómo funciona</a></li>
+            <li><a href="../index.html#app-tour">Features</a></li>
+            <li><a href="../index.html#pricing">Precio</a></li>
+            <li><a href="./" aria-current="page">Blog</a></li>
           </ul>
         </nav>
         <div class="nav-cta">
@@ -78,16 +103,25 @@ body{font-family:'Aeonik Pro',system-ui,sans-serif;background:var(--surface);col
     </div>
   </header>
 
-  <main id="main" class="error-page">
-    <p class="error-page__code" aria-hidden="true">404</p>
-    <h1 class="error-page__title">Página no encontrada</h1>
-    <p class="error-page__text">La página que buscás no existe o fue movida.</p>
-    <a href="index.html" class="btn btn--primary">
-      <span>Volver al inicio</span>
-      <span class="btn-icon">
-        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M5 12h14M13 6l6 6-6 6"/></svg>
-      </span>
-    </a>
+  <main class="blog-index-main">
+    <header class="blog-index-header">
+      <p class="section-eyebrow">Blog</p>
+      <h1>Guías de finanzas personales para Costa Rica</h1>
+      <p>Control de gastos, presupuestos, y cómo elegir la herramienta correcta para tus finanzas.</p>
+    </header>
+
+    <div class="blog-grid">
+      <article class="blog-card">
+        <a href="app-control-de-gastos-costa-rica" class="blog-card-link">
+          <img src="../assets/zaldoh-webpapp-costarica.webp" alt="Dashboard de Zaldo mostrando el balance mensual y las categorías de gasto de una cuenta en Costa Rica" class="blog-card-image" width="800" height="507" loading="lazy" decoding="async">
+          <div class="blog-card-body">
+            <p class="blog-card-meta">7 de septiembre de 2026</p>
+            <h2 class="blog-card-title">App para Control de Gastos en Costa Rica: la Guía Completa</h2>
+            <p class="blog-card-excerpt">Casi la mitad de los hogares costarricenses vive con al menos una deuda activa. Qué opciones existen hoy para llevar el control — apps de bancos, apps independientes, Excel — y cómo elegir la que sí vas a seguir usando.</p>
+          </div>
+        </a>
+      </article>
+    </div>
   </main>
 
   <div class="site-closing">
@@ -107,8 +141,8 @@ body{font-family:'Aeonik Pro',system-ui,sans-serif;background:var(--surface);col
       <div class="site-footer-card">
         <div class="site-footer-main">
           <div class="site-footer-brand">
-            <a href="index.html" class="site-footer-logo" aria-label="Zaldo — inicio">
-              <img src="assets/zaldo-logo-v1.svg" alt="Zaldo" class="logo-img" width="511" height="195" decoding="async" loading="lazy">
+            <a href="../index.html" class="site-footer-logo" aria-label="Zaldo — inicio">
+              <img src="../assets/zaldo-logo-v1.svg" alt="Zaldo" class="logo-img" width="511" height="195" decoding="async" loading="lazy">
             </a>
             <p class="site-footer-tagline">Convertí los correos de tu banco en un control de gastos automático.</p>
             <nav class="site-footer-social" aria-label="Redes sociales">
@@ -127,9 +161,9 @@ body{font-family:'Aeonik Pro',system-ui,sans-serif;background:var(--surface);col
             <div class="site-footer-col">
               <h3>Producto</h3>
               <ul>
-                <li><a href="index.html#pricing">Precios</a></li>
-                <li><a href="index.html#how-it-works">Cómo funciona</a></li>
-                <li><a href="blog">Blog</a></li>
+                <li><a href="../index.html#pricing">Precios</a></li>
+                <li><a href="../index.html#how-it-works">Cómo funciona</a></li>
+                <li><a href="./" aria-current="page">Blog</a></li>
               </ul>
             </div>
             <div class="site-footer-col">
@@ -141,16 +175,17 @@ body{font-family:'Aeonik Pro',system-ui,sans-serif;background:var(--surface);col
             <div class="site-footer-col">
               <h3>Legal</h3>
               <ul>
-                <li><a href="privacy-policy.html">Privacidad</a></li>
-                <li><a href="terms-of-service.html">Términos</a></li>
-                <li><a href="refund-and-cancellation-policy.html">Reembolsos</a></li>
+                <li><a href="../privacy-policy.html">Privacidad</a></li>
+                <li><a href="../terms-of-service.html">Términos</a></li>
+                <li><a href="../refund-and-cancellation-policy.html">Reembolsos</a></li>
               </ul>
             </div>
             <div class="site-footer-col">
               <h3>Contacto</h3>
               <ul>
-                <li><a href="soporte">Soporte</a></li>
+                <li><a href="../soporte">Soporte</a></li>
                 <li><a href="mailto:support@mizaldo.com">support@mizaldo.com</a></li>
+                <li><a href="https://wa.me/50671907650" target="_blank" rel="noopener noreferrer">WhatsApp</a></li>
               </ul>
             </div>
           </div>
@@ -158,14 +193,14 @@ body{font-family:'Aeonik Pro',system-ui,sans-serif;background:var(--surface);col
           <div class="site-footer-stores-group">
             <span class="site-footer-stores-label">Muy pronto</span>
             <div class="site-footer-stores-badges">
-              <img src="assets/AppStore.svg" alt="Próximamente en App Store" width="165" height="55" decoding="async" loading="lazy">
-              <img src="assets/google-play.svg" alt="Próximamente en Google Play" width="195" height="60" decoding="async" loading="lazy">
+              <img src="../assets/AppStore.svg" alt="Próximamente en App Store" width="165" height="55" decoding="async" loading="lazy">
+              <img src="../assets/google-play.svg" alt="Próximamente en Google Play" width="195" height="60" decoding="async" loading="lazy">
             </div>
           </div>
           <div class="site-footer-stores-group">
             <span class="site-footer-stores-label">Disponible en</span>
             <a class="site-footer-marketplace" href="https://workspace.google.com/marketplace/app/zaldo/243367250792?flow_type=2" target="_blank" rel="noopener noreferrer">
-              <img src="assets/google-workspace-marketplace-zaldo.svg" alt="Disponible en Google Workspace Marketplace" width="690" height="80" decoding="async" loading="lazy">
+              <img src="../assets/google-workspace-marketplace-zaldo.svg" alt="Disponible en Google Workspace Marketplace" width="690" height="80" decoding="async" loading="lazy">
             </a>
           </div>
         </div>
