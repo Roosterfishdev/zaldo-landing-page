@@ -1,6 +1,16 @@
 mizaldo.com {
 	root * /srv/mizaldo.com
 	encode gzip zstd
+
+	# /slug → /blog/slug when the post exists (pretty URLs drop the trailing slash)
+	@blog_at_root {
+		not path /
+		file {
+			try_files /blog{path}/index.html
+		}
+	}
+	redir @blog_at_root /blog{uri} 301
+
 	try_files {path} {path}.html {path}/index.html
 	file_server
 
@@ -12,6 +22,7 @@ mizaldo.com {
 	@html {
 		path *.html /
 		path /soporte /soporte/
+		path /blog /blog/*
 	}
 	header @html Cache-Control "max-age=0, must-revalidate"
 }
