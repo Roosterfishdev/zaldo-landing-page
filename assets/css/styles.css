@@ -5540,6 +5540,9 @@ html.js-animations .hero-showcase.is-visible .hero-float--right {
 
 .blog-post-cover {
   width: 100%;
+  height: auto;
+  aspect-ratio: 16 / 9;
+  object-fit: cover;
   border-radius: 20px;
   margin: 1.75rem 0 2.5rem;
   display: block;
