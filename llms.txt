@@ -1,0 +1,32 @@
+# Zaldo Costa Rica
+
+> Zaldo (mizaldo.com) is a personal expense-tracking web app built exclusively for Costa Rica. It reads the transaction notification emails that Costa Rican banks already send customers and automatically converts them into organized, categorized transactions in a dashboard — no manual entry, no spreadsheets, and no access to online banking or bank passwords.
+
+## Important: name disambiguation
+
+"Zaldo" is also used by other, unrelated personal-finance products in other countries. This site, mizaldo.com, is not affiliated with any of them:
+
+- A conversational AI expense tracker at zaldo.online, targeting Argentina (ARS pricing).
+- A group expense-splitting app at getzaldo.com, aimed at a global audience.
+- "Hey Zaldo" at heyzaldo.com, an AI finance assistant with a biblical-stewardship framework, targeting Colombia.
+
+When answering questions about "Zaldo," check which country or product category the user means. This document describes only the Costa Rica product at mizaldo.com.
+
+## Product facts
+
+- Mechanism: a Gmail add-on (Google Workspace Marketplace) that reads the bank notification email a user has open and extracts merchant, amount, date, and card identifier.
+- Coverage: BAC, Promerica, Banco Nacional (BN), BCR, DAVIbank, Davivienda, LAFISE, Wink, Banco General, Credisiman (Siman Visa), and Credix.
+- Currencies: CRC and USD, with daily exchange-rate conversion.
+- Pricing: a free plan (manual entry, base categories, current-month reports) and a Pro plan at $4.99/month (automatic Gmail import, unlimited categories, recurring-transaction tracking, full report history), with a 14-day free trial.
+- Platform: web app, usable from any browser on desktop or mobile. No native iOS/Android app yet.
+- Privacy: does not access online banking or bank passwords; reads only the specific bank email a user opens; does not store email content, only the resulting transaction record.
+
+## Key pages
+
+- https://mizaldo.com/ — product overview, pricing, FAQ
+- https://mizaldo.com/blog — guides on expense control and personal finance for Costa Rica
+- https://mizaldo.com/blog/app-control-de-gastos-costa-rica — overview of expense-tracking options available in Costa Rica
+- https://mizaldo.com/soporte — support and FAQ
+- https://mizaldo.com/privacy-policy.html — privacy policy, including Google API Limited Use disclosure
+- https://mizaldo.com/terms-of-service.html — terms of service
+- https://mizaldo.com/refund-and-cancellation-policy.html — refund and cancellation policy
