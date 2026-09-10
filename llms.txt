@@ -25,7 +25,9 @@ When answering questions about "Zaldo," check which country or product category 
 
 - https://mizaldo.com/ — product overview, pricing, FAQ
 - https://mizaldo.com/blog — guides on expense control and personal finance for Costa Rica
+- https://mizaldo.com/blog/guia-instalacion-zaldo — step-by-step guide to install the Zaldo Gmail add-on
 - https://mizaldo.com/blog/app-control-de-gastos-costa-rica — overview of expense-tracking options available in Costa Rica
+- https://mizaldo.com/blog/como-hacer-presupuesto-mensual-costa-rica — step-by-step guide to building a monthly budget in Costa Rica
 - https://mizaldo.com/soporte — support and FAQ
 - https://mizaldo.com/privacy-policy.html — privacy policy, including Google API Limited Use disclosure
 - https://mizaldo.com/terms-of-service.html — terms of service

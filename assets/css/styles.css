@@ -5676,10 +5676,176 @@ html.js-animations .hero-showcase.is-visible .hero-float--right {
   hyphens: auto;
 }
 
+.blog-card-image--right {
+  object-position: right center;
+}
+
+.guide-steps {
+  display: flex;
+  flex-direction: column;
+  gap: 1.5rem;
+  margin: 2rem 0 2.5rem;
+}
+
+.guide-step {
+  background: var(--card-bg);
+  border-radius: 20px;
+  overflow: hidden;
+  scroll-margin-top: 1.5rem;
+}
+
+.guide-step-body {
+  padding: 1.5rem 1.5rem 1.25rem;
+}
+
+.guide-step-heading {
+  display: flex;
+  align-items: center;
+  gap: 0.875rem;
+  margin-bottom: 0.875rem;
+}
+
+.guide-step-num {
+  flex: none;
+  width: 2.25rem;
+  height: 2.25rem;
+  border-radius: 50%;
+  background: var(--teal);
+  color: var(--heading-dark);
+  display: grid;
+  place-items: center;
+  font-size: 0.9375rem;
+  font-weight: 700;
+}
+
+.blog-post-body .guide-step-heading h2 {
+  margin: 0;
+  font-size: 1.125rem;
+  letter-spacing: -0.02em;
+  line-height: 1.3;
+}
+
+.blog-post-body .guide-step-body p {
+  text-align: left;
+  hyphens: none;
+}
+
+.blog-post-body .guide-step-body p:last-child {
+  margin-bottom: 0;
+}
+
+.guide-subtle {
+  font-size: 0.875rem !important;
+  margin-top: 0.75rem !important;
+}
+
+.guide-step-cta {
+  margin-top: 1.25rem;
+}
+
+.blog-post-body .guide-step-cta .btn {
+  text-decoration: none;
+}
+
+.blog-post-body .guide-step-cta .btn--white {
+  background: #fff;
+  color: var(--heading-dark);
+  border: 1px solid #e0e6e6;
+}
+
+.blog-post-body .guide-step-cta .btn--white:hover {
+  background: #fafcfc;
+  color: var(--heading-dark);
+}
+
+.blog-post-body .guide-step figure {
+  margin: 0;
+  padding: 0 1.25rem 1.25rem;
+  background: transparent;
+  border-radius: 0;
+}
+
+.guide-step figure img {
+  width: 100%;
+  max-width: 22rem;
+  height: auto;
+  margin: 0 auto;
+  display: block;
+  border-radius: 12px;
+  background: var(--surface);
+}
+
+.guide-step figure.guide-step-figure--wide img {
+  max-width: 100%;
+}
+
+.guide-devices {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 0.875rem;
+  margin: 1.125rem 0;
+}
+
+.guide-device {
+  padding: 1.125rem;
+  background: var(--surface);
+  border-radius: 14px;
+}
+
+.blog-post-body .guide-device h3 {
+  margin: 0 0 0.5rem;
+  font-size: 0.9375rem;
+}
+
+.blog-post-body .guide-device p,
+.blog-post-body .guide-note p,
+.blog-post-body .guide-notice p {
+  margin-bottom: 0.75rem;
+  text-align: left;
+  hyphens: none;
+}
+
+.blog-post-body .guide-device p:last-child,
+.blog-post-body .guide-note p:last-child,
+.blog-post-body .guide-notice p:last-child {
+  margin-bottom: 0;
+}
+
+.guide-note,
+.guide-notice {
+  background: var(--surface);
+  border-radius: 14px;
+  padding: 1.125rem 1.25rem;
+  margin: 1.125rem 0 0;
+}
+
+.blog-post-body .guide-notice {
+  margin: 0 1.5rem 1.5rem;
+}
+
+.blog-post-body .guide-notice h3,
+.blog-post-body .guide-note h3 {
+  margin: 0 0 0.5rem;
+  font-size: 0.9375rem;
+}
+
+.blog-post-body .guide-notice figure {
+  margin: 1rem 0 0;
+  padding: 0;
+}
+
 @media (max-width: 600px) {
   .blog-index-main,
   .blog-post-main {
     padding: 3rem 1.25rem 4.5rem;
+  }
+
+  .guide-devices {
+    grid-template-columns: 1fr;
+  }
+
+  .blog-post-body .guide-notice {
+    margin: 0 1rem 1.25rem;
   }
 }
 
